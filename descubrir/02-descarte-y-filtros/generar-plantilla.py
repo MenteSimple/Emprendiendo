@@ -18,7 +18,6 @@ from pathlib import Path
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
-from openpyxl.worksheet.datavalidation import DataValidation
 
 SALIDA = Path(__file__).resolve().parent / "plantilla-descarte.xlsx"
 
@@ -27,9 +26,15 @@ FILAS = 24
 
 HOJAS = {
     "Descartadas": ["#", "La idea, en una línea", "El motivo que dimos", "Revisión"],
-    "Sobrevivientes": ["#", "La idea, en una línea", "¿Con quién hablamos?", "¿Quién lo consigue?", "Revisión"],
+    "Sobrevivientes": [
+        "#", "La idea, en una línea", "¿Qué problema, y de quién?",
+        "¿Con quién hablamos?", "¿Quién lo consigue?",
+        "¿Qué necesita que hoy no tengamos?", "Revisión",
+    ],
     "Finalistas": ["Criterio", "① ", "② ", "③ ", "Revisión"],
 }
+
+NOMBRES = "Nombre del finalista"
 
 CRITERIOS = [
     "Deseabilidad — ¿alguien lo quiere de verdad?",
@@ -49,13 +54,16 @@ AYUDA = {
         "• La columna Revisión la llena la herramienta. Déjenla vacía."
     ),
     "Sobrevivientes": (
-        "Las que pasaron los tres cortes.\n\n"
-        "• «¿Con quién hablamos?» se responde con un nombre o un lugar concreto. Un tipo de persona no cuenta.\n"
+        "Las que pasaron los tres cortes. Una columna por corte: sin lo que ustedes escribieron ahí, la revisión no tiene qué leer.\n\n"
+        "• «¿Qué problema, y de quién?» — corte 1. Si no se puede escribir como problema de alguien, no había problema detrás.\n"
+        "• «¿Con quién hablamos?» — corte 2. Un nombre o un lugar concreto. Un tipo de persona no cuenta.\n"
         "• «¿Quién lo consigue?» es alguien del equipo, con nombre.\n"
+        "• «¿Qué necesita que hoy no tengamos?» — corte 3. Licencia, permiso, laboratorio, obra. Si no falta nada, escriban «nada».\n"
         "• La columna Revisión la llena la herramienta."
     ),
     "Finalistas": (
         "Los tres que quedaron, comparados.\n\n"
+        "• Los nombres de los tres van en la fila «Nombre del finalista», en B2, C2 y D2. Sin ellos la revisión solo puede decir «el ②».\n"
         "• Estos cuatro criterios no son binarios: tienen matices y de eso se trata la conversación.\n"
         "• El cuarto es el que más se deja en blanco y el que más pesa en un plazo corto.\n"
         "• «Nos parece interesante» no es encaje: encaje es qué sabe este equipo, a quién conoce y a qué tiene acceso."
@@ -82,11 +90,15 @@ def main() -> None:
         hoja.title = nombre
         encabezar(hoja, titulos)
 
-        filas = len(CRITERIOS) if nombre == "Finalistas" else FILAS
+        filas = len(CRITERIOS) + 1 if nombre == "Finalistas" else FILAS
         for i in range(filas):
             r = i + 2
             if nombre == "Finalistas":
-                hoja.cell(row=r, column=1, value=CRITERIOS[i]).alignment = Alignment(wrap_text=True, vertical="top")
+                # la fila 2 es donde el equipo escribe los tres nombres; los criterios van debajo
+                c = hoja.cell(row=r, column=1, value=NOMBRES if i == 0 else CRITERIOS[i - 1])
+                c.alignment = Alignment(wrap_text=True, vertical="top")
+                if i == 0:
+                    c.font = Font(bold=True)
             else:
                 hoja.cell(row=r, column=1, value=i + 1).alignment = Alignment(horizontal="center")
             for j in range(1, len(titulos) + 1):
@@ -96,7 +108,7 @@ def main() -> None:
                     c.alignment = Alignment(wrap_text=True, vertical="top")
             hoja.row_dimensions[r].height = 30
 
-        anchos = [5, 46, 34, 34, 40] if nombre == "Sobrevivientes" else [5, 46, 40, 44]
+        anchos = [5, 40, 34, 30, 22, 30, 40] if nombre == "Sobrevivientes" else [5, 46, 40, 44]
         if nombre == "Finalistas":
             anchos = [34, 28, 28, 28, 40]
         for j, w in enumerate(anchos[: len(titulos)], start=1):
@@ -121,10 +133,6 @@ def main() -> None:
         h.cell(row=11 + i, column=6, value=rotulo).font = Font(bold=True)
         h.cell(row=11 + i, column=7, value=formula)
     h.column_dimensions["G"].width = 12
-
-    dv = DataValidation(type="list", formula1='"sí,no"', allow_blank=True, showDropDown=False)
-    wb["Sobrevivientes"].add_data_validation(dv)
-    dv.add(f"C2:C{FILAS+1}")
 
     wb.save(SALIDA)
     print(f"✅ {SALIDA.name} · hojas: {', '.join(HOJAS)} · testigos en F11:F13 de Descartadas")

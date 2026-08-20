@@ -6,7 +6,7 @@
 
 **Qué no hace:** no filtra ni elige el ganador. Si le piden que decida, se niega. El equipo va a trabajar meses en esto, y una decisión que no tomaron no la van a saber defender.
 
-**La plantilla está en esta misma carpeta:** [`plantilla-descarte.xlsx`](plantilla-descarte.xlsx) · tres hojas, `Descartadas`, `Sobrevivientes` y `Finalistas`.
+**La plantilla está en esta misma carpeta:** [`plantilla-descarte.xlsx`](plantilla-descarte.xlsx) · tres hojas, `Descartadas`, `Sobrevivientes` y `Finalistas`. En `Sobrevivientes` cada corte tiene su columna —el problema y de quién, con quién hablamos, quién lo consigue, qué necesita que hoy no tengamos— porque lo que la revisión audita es lo que ustedes escribieron, no lo que se pueda deducir de la línea de la idea. En `Finalistas`, los tres nombres van en la fila «Nombre del finalista».
 
 > ⛔ **Llénenla primero y adjúntenla al chat antes de pegar el prompt.** La columna `Revisión` de cada hoja queda vacía: esa la llena la herramienta. Adjuntar el archivo es además lo que activa el entorno de código del asistente; sin adjunto no tiene con qué abrir un `.xlsx`.
 
@@ -46,15 +46,17 @@ PASO 2 — DESCARTES MAL MOTIVADOS. Revisa la hoja `Descartadas`.
   A los descartes bien motivados, escríbeles `ok` en `Revisión` y nada más.
 
 PASO 3 — SOBREVIVIENTES QUE NO PASAN. Revisa la hoja `Sobrevivientes` contra los tres cortes, que son binarios:
-     1. ¿Es un problema, o es una solución? Se cae si ya dice lo que se va a construir. Prueba: intenta reescribirla como problema de alguien; si no se puede, no había problema detrás.
-     2. ¿Con quién podemos hablar antes de la fecha que te di? Se cae si no hay un nombre o un lugar concreto. «Seguro conseguimos a alguien» no cuenta, y un tipo de persona tampoco.
-     3. ¿Cabe en nuestro plazo? Se cae si necesita una licencia, un laboratorio, una obra o un permiso que no llega a tiempo.
+     1. ¿Es un problema, o es una solución? Léelo en la columna «¿Qué problema, y de quién?». Se cae si ahí está escrito lo que se va a construir en vez de a quién le duele qué.
+     2. ¿Con quién podemos hablar antes de la fecha que te di? Léelo en «¿Con quién hablamos?» y «¿Quién lo consigue?». Se cae si no hay un nombre o un lugar concreto. «Seguro conseguimos a alguien» no cuenta, y un tipo de persona tampoco.
+     3. ¿Cabe en nuestro plazo? Léelo en «¿Qué necesita que hoy no tengamos?». Se cae si lo que falta es una licencia, un laboratorio, una obra o un permiso que no llega a tiempo. «Nada» es una respuesta; la celda vacía no lo es.
+
+  ⛔ CADA CORTE SE JUZGA POR SU COLUMNA. Si la columna de un corte está vacía, ese corte NO está pasado y así lo escribes: no lo deduzcas de la línea de la idea ni lo des por bueno. Adivinar ahí es lo único que puede volver inútil toda la revisión.
 
   Sé especialmente duro con el corte 2: es el que separa un proyecto que arranca de uno que se queda esperando conseguir gente. Si la columna «¿Con quién hablamos?» dice una categoría y no una persona o un lugar, el corte NO está pasado.
 
   En `Revisión` de cada fila: `ok`, o cuál corte no pasa y por qué. Máximo dos frases.
 
-PASO 4 — LA COMPARACIÓN. Revisa la hoja `Finalistas`, criterio por criterio:
+PASO 4 — LA COMPARACIÓN. Revisa la hoja `Finalistas`, criterio por criterio. Nombra a los finalistas con lo que diga la fila «Nombre del finalista»; si esa fila está vacía, dilo y llámalos ① ② ③:
      · Deseabilidad — ¿alguien lo quiere de verdad?
      · Factibilidad — ¿se puede construir con lo que existe hoy?
      · Viabilidad — ¿hay forma de que se sostenga?
@@ -62,7 +64,7 @@ PASO 4 — LA COMPARACIÓN. Revisa la hoja `Finalistas`, criterio por criterio:
 
   El cuarto es el que casi todos dejan flojo y el que más pesa en un plazo corto. «Nos parece interesante» no es encaje: encaje es qué sabe este equipo, a quién conoce y a qué tiene acceso. Si nuestra respuesta no nombra una capacidad concreta o un contacto real, dilo.
 
-  En `Revisión` de cada criterio: qué finalista quedó peor sustentado en ese criterio y qué falta. Máximo dos frases.
+  En `Revisión` de cada una de las cuatro filas de criterio —no en la de los nombres—: qué finalista quedó peor sustentado en ese criterio y qué falta. Máximo dos frases.
 
 PASO 5 — EL ARCHIVO.
   ⛔ ESCRIBE SOLO EN LA COLUMNA `Revisión` DE LAS TRES HOJAS. Todo lo demás es trabajo de mi equipo y no se toca: ni corrijas la redacción, ni completes celdas vacías, ni reordenes filas, ni agregues ideas.

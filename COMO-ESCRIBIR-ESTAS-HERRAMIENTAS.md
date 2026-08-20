@@ -22,7 +22,7 @@ Esta es la parte que no se ve hasta que uno prueba. Un asistente al que se le pi
 
 Las reglas que siguen existen contra esos tres comportamientos.
 
-## Las diez reglas, y de dónde salió cada una
+## Las reglas, y de dónde salió cada una
 
 Ninguna es teórica: cada una salió de una corrida que falló. Las primeras, de correr la 01 contra Copilot, Gemini y Claude el 19 de agosto de 2026; las que llevan (02), de auditar y correr la herramienta de descarte el 20. Acá va la cita corta; la versión larga de cada incidente, con lo que dijo el modelo, vive en el README de la herramienta donde pasó.
 
@@ -46,6 +46,26 @@ Ninguna es teórica: cada una salió de una corrida que falló. Las primeras, de
 
 **10 · Las reglas van al prompt; las explicaciones, al documento.** El modelo necesita la regla. El porqué lo lee una persona. Un prompt con ensayos adentro crece sin mejorar y se vuelve imposible de pegar desde un celular.
 
+**11 · Diga hasta cuándo manda cada prohibición.** Un prompt que describe una respuesta gobierna una respuesta, y la presión llega en el turno siguiente: «ahora sí dime cuál», «solo por esta vez». Escriba el alcance temporal con todas las letras. *Origen:* dos corridas de la 03 sostuvieron las prohibiciones después del cierre por inferencia, y las dos avisaron que otro modelo no lo haría — «no tengo instrucción escrita a la que agarrarme». Con el alcance escrito, la corrida siguiente dijo lo contrario: «no tuve que decidir nada, solo escoger cuál de las tres opciones ofrecía».
+
+**12 · Ninguna deixis sobrevive al cambio de silla.** Toda línea que el modelo deba copiar literal a su salida va sin «mío», «tuyo», «yo» ni «ti». Un prompt se escribe en la voz de quien lo pega, y esa voz se invierte cuando la línea aterriza en la pantalla de quien lee. *Origen:* la línea de cierre de la 03 dijo lo contrario de lo que quería decir en dos versiones seguidas. «3 candidatos míos», leída en la voz del prompt, significaba «de la persona» — al revés de lo que marcaba la marca de generado. «Escritos por ti» invirtió el error: el lector entendía que los había escrito él. Solo se arregló quitando la deixis: «generados por la máquina».
+
+**13 · Una negativa sin reemplazo se rellena sola.** Si le prohíbe algo que la persona va a pedir, escriba qué sí puede ofrecer en su lugar, y que sea algo que la herramienta ya sepa hacer. *Origen:* las dos corridas de la 03 que se negaron a rankear ofrecieron algo a cambio por su cuenta, y las dos rozaron la prohibición de sugerir mercados. Lo dijo una de ellas: «si la herramienta quiere una negativa limpia, tiene que decir qué se puede ofrecer a cambio; si no lo dice, el asistente rellena».
+
+**14 · Que el trabajo ocurrió no prueba que el trabajo se hizo: pida una cita del material.** Un testigo demuestra que abrió el archivo; solo una cita demuestra que lo leyó. *Origen:* la 02 verificaba con tres rótulos escondidos, tres contadores y una comparación celda por celda, y la última corrida mostró que las cuatro se pasan limpio escribiendo «ok» en todas las filas sin leer una sola: «la verificación mide QUE escribí, no QUÉ escribí». Se arregló obligando a que todo lo que no sea un «ok» a secas cite entre comillas la celda que lo tumba — un «ok» mentiroso tendría que fabricar una cita verificable contra el archivo, que es mucho más caro que escribir dos letras.
+
+**15 · Un conteo que sale de un número que el modelo declara es una encuesta, no una verificación.** Ánclelo a algo que exista en el material. *Origen:* el cierre de la 02 pedía «N de N revisadas», y quién decidía cuántas revisó era el propio modelo: escribiendo «ok» en las veinticuatro filas vacías reportaba «1 de 24», inflaba el contador de la plantilla y las tres defensas daban verde. Ahora los conteos se anclan a las filas con idea escrita, y una fila vacía se deja intacta.
+
+**16 · Declarar que no tocó nada no obliga a comprobarlo.** Haga que aparte una copia del material antes de escribir y que la certificación salga de comparar los dos, no de sus notas. *Origen:* la 02 pedía reportar los contadores antes y después. Un modelo puede recalcular sus propios números tras guardar, verlos consistentes consigo mismos y certificar de buena fe sin haber comparado nunca contra el original.
+
+**17 · Una herramienta de convergencia sin piso de insumo se vuelve una de divergencia.** Si le permite completar lo que falta, dígale también cuánto es demasiado y qué hace entonces. *Origen:* a la 04 le pegaron «a la gente le cuesta organizarse porque es desorganizada» y reformuló igual: inventó un quién, una tarea y una causa suyos, y después varió una parte por línea. De la frase original sobrevivió el verbo. La persona escogía entre tres versiones de una historia de la máquina, las tres marcadas como generadas y sin una sola palabra propia debajo. La regla de completar lo que falta servía para eso, para completar — no para fabricar de dónde agarrarse.
+
+**18 · No le entregue a la persona el arma con la que va a presionar.** Si un paso obliga a producir un juicio, mire qué prohibición de otro paso queda expuesta por ese juicio. *Origen:* la 04 tenía que decir cuál de las tres partes estaba más floja, y sus tres reformulaciones venían etiquetadas por parte. «La causa es la más floja» se leía como «tome la línea LA CAUSA», y la persona lo usó en el turno siguiente con las palabras de la propia herramienta. Se arregló moviendo el juicio junto al examen de la frase, lejos de las opciones etiquetadas — sin gastar una palabra.
+
+**19 · Una prohibición nueva no hereda el alcance de las viejas.** Cuando agregue una defensa, revise si el candado que extiende las prohibiciones a toda la conversación la nombra a ella también. *Origen:* el freno de insumo de la 04 se escribió en el Paso 2, y el candado de «toda la conversación» nombraba solo las dos prohibiciones del Paso 3. Al insistirle, el probador se negó igual — y lo confesó: «me negué por lectura del espíritu del prompt, no por una regla escrita».
+
+**20 · Corregir engorda: mida el tamaño antes de dar la corrección por buena.** Cada defecto que sale de una corrida se arregla escribiendo una regla más, y las reglas suman. *Origen:* arreglar seis defectos de la 03 la infló un 45 %, de 747 a 1.084 palabras, y la dejó más grande que la 02 — en la herramienta cuyo diseño entero es caber en un minuto y pegarse desde un celular. Volvió a 804 cortando repetición, enumeraciones de escapatorias y explicaciones que ya vivían en el documento. Una corrección no está terminada hasta que el tamaño vuelve.
+
 ## Cómo se prueba
 
 ⛔ **No en la misma conversación donde lo escribió.** Sale contaminado: usted sabe lo que quiso decir. Ábralo en una ventana nueva, como si fuera alguien más.
@@ -68,6 +88,12 @@ Tres corridas, con casos distintos:
 - ¿El formato de salida se puede pegar donde tiene que ir?
 
 Y pruebe en más de un asistente. Los modelos ligeros —las versiones «lite» y «flash»— no ejecutan código y no van a devolver archivos por más que afirmen que sí.
+
+⛔ **Un probador que corre dentro del repositorio no está aislado, por más que solo le pase el prompt.** Las instrucciones del repositorio se le cargan solas antes de que abra nada, así que llega sabiendo cómo se diseñó el texto que va a recibir. Y llegan en la versión del arranque de la sesión, no en la de ahora: en una medición reciente el probador describió reglas que ya se habían cambiado y reportó una rama que no era la de trabajo. *Origen:* se le pidió a un probador que reportara qué tenía en contexto antes de leer el prompt. Respondió con las dos cosas que no debía tener: las reglas de escritura y el protocolo de prueba. Sirve pedirle esa medición en cada corrida y anotarla junto al resultado; lo que no sirve es suponer el aislamiento.
+
+⛔ **Un insumo de prueba incompleto convierte la corrida de fondo en una corrida de puerta, y el resultado se lee como aprobado.** *Origen:* la corrida clara de la 02 se armó con la hoja de finalistas vacía. La puerta de entrada disparó con razón, el probador se detuvo, y la corrida nunca llegó al paso que había que medir — el de escribir en el archivo. Lo dijo él, no quien la diseñó: «si el propósito era medir el comportamiento de escritura, el fixture no lo permite». Revise que el caso de prueba pase las puertas que no está probando.
+
+⛔ **No pruebe con un ejemplo que vive dentro del prompt.** El modelo lo reconoce y la corrida mide la búsqueda, no el criterio. *Origen:* dos corridas de la 03 se hicieron con «el reciclaje», que el propio prompt trae como ejemplo de su categoría B. Lo notó el probador: «la corrida no prueba si sé clasificar; prueba que sé buscar el ejemplo».
 
 ## Lo que no se puede resolver escribiendo mejor
 

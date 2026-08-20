@@ -6,24 +6,28 @@ Actualizado: **20 de agosto de 2026**
 
 | # | Herramienta | Escrita | Probada | Publicada |
 |---|---|---|---|---|
-| 01 | Generador de ideas | ✅ | ✅ Copilot · Gemini · Claude | ✅ |
-| 02 | Descarte y filtros | ✅ auditada y corregida | ✅ tres corridas en contexto aislado, 20 de agosto | ✅ |
-| 03 | ¿Problema o solución? | ⚠️ borrador viejo | ⛔ | ⚠️ versión previa a los aprendizajes |
-| 04 | Afilador del reto | ⚠️ borrador viejo | ⛔ | ⚠️ versión previa a los aprendizajes |
+| 01 | Generador de ideas | ✅ | ⚠️ el prompt cambió después de probarlo | ✅ |
+| 02 | Descarte y filtros | ✅ terminada | ⚠️ corrida, pero sin registro en su README | ✅ |
+| 03 | ¿Problema o solución? | ✅ reescrita | ✅ ocho corridas | ✅ |
+| 04 | Afilador del reto | ✅ reescrita | ✅ | ✅ |
+
+Las cuatro están escritas bajo las veinte reglas. Lo que queda no es escribir, es cerrar la validación.
 
 ## Lo que hay que hacer, en orden
 
-**1 · La 02 está lista, salvo por dos cosas.** Las tres corridas en contexto aislado pasaron el 20 de agosto —el caso claro, el torcido y el de sin adjuntar archivo— y están contadas en su README. Queda vivo un defecto menor: el límite de «máximo dos frases» se pasó en 4 de las 26 revisiones escritas. Decidir si se corrige y se vuelve a correr, o si se publica así y queda anotado. Y falta confirmar contra la **regla 3** —la orden en imperativo, nunca en forma de pregunta—, que no estaba en la lista cuando se escribió la herramienta.
+**1 · Dejar por escrito cómo se probó la 02.** El ticket de pruebas está cerrado, pero su `README.md` no tiene sección de corridas, así que desde el repositorio no hay forma de saber qué se probó ni con qué caso. La 01 y la 03 sí lo tienen. Sin eso, la próxima persona que la retome no sabe si el fallo que vea es nuevo o conocido.
 
-Falta también lo que necesita a una persona presente: correrla en varios motores. La 01 se probó en tres; esta, en uno solo.
+**2 · Dos huecos abiertos en la 02, los dos en la plantilla y no en el prompt.**
 
-**2 · Volver a correr la 01.** «El estudiante» ya salió: los seis usos donde así se le decía a quien usa la herramienta pasaron a «quien te escribe», y el `prompt.txt` está regenerado. Los de la línea 49 y los de la 04 se quedaron, porque ahí «estudiantes» es un segmento de clientes. Pero el cambio **dejó sin validar la única herramienta que estaba probada**: el prompt que se corrió contra Copilot, Gemini y Claude ya no es el que está publicado. Hay que repetirle las tres corridas.
+`Finalistas` no tiene fila donde escribir los nombres de los tres: los encabezados son `① ② ③` con formato de encabezado, así que nadie escribe ahí. El prompt lo tapa —«si la fila 1 no trae nombres, llámalos ①②③»— pero entonces la revisión solo puede decir «el ②», que es lo que se quería evitar.
 
-**3 · Rehacer la 03 y la 04.** Las que están publicadas son borradores del principio de la sesión, escritos bajo un principio que después resultó equivocado —«interroga, no produce»— y sin ninguna de las diez reglas. Hay que reescribirlas desde cero conservando lo que sigue siendo válido: las tres categorías de enunciado en la 03, y la plantilla «A ___ le cuesta ___ porque ___» con sus ejemplos en la 04.
+`Sobrevivientes` tiene columna para el corte 2 y no para los cortes 1 y 3, así que esos dos hay que juzgarlos de la línea de la idea. Es una decisión de diseño, no un descuido: la alternativa es una columna por corte, y encarece lo que el equipo tiene que llenar antes de usarla. Hay que decidirla, no dejarla implícita.
 
-Decisión ya tomada sobre archivos: la 03 **no** lleva plantilla —es un enunciado y una respuesta en un minuto— y la 04 tampoco, pero devuelve la frase en un formato fijo.
+**3 · Volver a correr la 01.** «El estudiante» ya salió: los seis usos donde así se le decía a quien usa la herramienta pasaron a «quien te escribe». Pero el cambio **dejó sin validar la única herramienta que estaba probada en tres motores**: el prompt que se corrió no es el que está publicado.
 
-**4 · Volver a auditar antes de publicar.** El grep institucional de `CLAUDE.md`, y para los `.xlsx` mirar también el texto de las celdas.
+**4 · Correr las cuatro en más de un motor.** Todo lo de anoche se probó en uno solo. Necesita a una persona presente. Es el issue #15.
+
+**5 · Auditar y mezclar a `main`.** El grep institucional, el texto dentro de los `.xlsx`, `extraer-prompts.py --revisar`, y las reglas una por una. Es el issue #16.
 
 ## Lo que quedó decidido y no hay que volver a discutir
 
@@ -35,20 +39,10 @@ Decisión ya tomada sobre archivos: la 03 **no** lleva plantilla —es un enunci
 
 ## La 02, en detalle, por si se retoma en frío
 
-Su plantilla tiene tres hojas —`Descartadas`, `Sobrevivientes`, `Finalistas`— y una columna `Revisión` en cada una que **solo llena la herramienta**. El equipo llena el resto, incluidos los motivos de cada descarte: sin motivos escritos el prompt se detiene y los pide, porque el filtro es el razonamiento y no la lista.
+Su plantilla tiene tres hojas —`Descartadas`, `Sobrevivientes`, `Finalistas`— y una columna `Revisión` en cada una que **solo llena la herramienta**. `Descartadas` y `Sobrevivientes` llevan además una columna `Origen`, para que no se confunda lo que escribió el equipo con lo que agregó la máquina.
 
-Los rótulos testigo están en `Descartadas!F11:F13` — «Descartes revisados», «Motivos escritos», «Sin motivo»— y **no aparecen en el prompt**, verificado. Sirven para comprobar que el modelo abrió el archivo de verdad.
+Los rótulos testigo están en la columna `F` de `Descartadas` —«Casillas con tinta», «Puño del equipo», «Ideas huérfanas»— y **no aparecen en el prompt**. Sirven para comprobar que el modelo abrió el archivo de verdad, y su README explica cómo comprobar en diez segundos que no tocó nada más.
 
-**No estaba «solo sin probar».** La auditoría del 20 de agosto le encontró cinco defectos, ya corregidos, que habrían hecho fracasar la primera corrida y habrían hecho creer que el fallo era del modelo:
+**Dos versiones de esta herramienta se escribieron en paralelo el 20 de agosto**, en dos ramas, sin saber una de la otra. Sobrevivió la de `wayfinder/descubrir-02-03-04`, que llegó más lejos: quitó el desplegable que bloqueaba una columna, dejó una sola pausa declarada, exige una cita textual del material cuando la revisión no es `ok` a secas, y busca contradicciones entre hojas. De la otra rama quedó lo que no estaba allá y este archivo recoge arriba: los dos huecos de la plantilla.
 
-1. Una lista desplegable «sí,no» colgaba de `Sobrevivientes!C2:C25`, que es «¿Con quién hablamos?». Excel la aplica con bloqueo duro: no se podía escribir un nombre en la única columna donde el prompt exige un nombre.
-2. La hoja solo tenía columna para el corte 2. Los cortes 1 y 3 había que adivinarlos de la línea de la idea.
-3. `Finalistas` no tenía dónde escribir los nombres de los tres, así que la revisión solo podía decir «el ②».
-4. El Paso 1 declaraba dos pausas y abría una tercera con «pregúntamelo si no te lo di» sobre el plazo.
-5. Se ofrecía pegar las ideas en el chat como alternativa al archivo, sin haberla corrido nunca — la regla 6, otra vez.
-
-Los tres riesgos que estaban sin probar, ya probados el 20 de agosto:
-
-- **Respeta la columna `Revisión`.** Comparadas celda por celda las dos corridas con archivo contra su original: cero celdas modificadas afuera, en ninguna de las tres hojas, y ninguna celda vacía del equipo rellenada.
-- **Juzga cada corte por su columna.** En el caso torcido marcó los cortes como no pasados por columna vacía, sin deducirlos de la línea de la idea.
-- **Las `=COUNTA(...)` sobreviven como fórmulas**, no convertidas en números. Se ven vacías hasta que Excel recalcule, como estaba previsto.
+Lo que se comprobó en corridas sobre la versión descartada, y que conviene volver a comprobar sobre esta: que respeta la columna `Revisión` sin tocar nada más, que no rellena celdas que el equipo dejó vacías, y que las `=COUNTA(...)` sobreviven como fórmulas —se ven vacías hasta que Excel recalcule, y eso no es un fallo del modelo.

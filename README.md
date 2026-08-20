@@ -63,6 +63,10 @@ Proponer · Modelar · Validar — en construcción.
 
 Ninguna sabe nada de su mercado, sus clientes ni su ciudad. Todo lo que digan sobre el mundo real es una conjetura plausible, y varias van a ser falsas con seguridad y con buen tono. **Sirven para producir alternativas y para revisar razonamientos, no para conseguir hechos.** Los hechos se consiguen hablando con gente, y eso no se delega.
 
+## De quién es esto
+
+Trabajo propio de **Andrés Saldarriaga Navarro**, publicado a título personal. No es material de ninguna institución: no lleva su nombre, ni sus marcas, ni sus ejemplos, ni depende de estar matriculado en nada. Se ofrece a quien quiera usarlo.
+
 ## Licencia
 
 Contenido bajo [CC BY-SA 4.0](LICENSE). Puede usarlo, adaptarlo y redistribuirlo, incluso comercialmente, siempre que dé crédito y mantenga la misma licencia.

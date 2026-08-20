@@ -24,7 +24,7 @@ Los bloques salen siempre, en cualquiera de las tres rutas. Son el respaldo si e
 
 ⚠️ **Que las ideas salgan solo en pantalla no es falla del prompt:** hay modelos que no generan archivos. Por eso se le pide que diga cuál de las tres rutas puede.
 
-**Si no sabe por dónde empezar**, arranque igual. La herramienta le ofrece los cinco sectores del curso y, si con eso no basta, le pregunta por los cuatro sitios donde buscar oportunidad —lo que cambió · industrias rotas · lo que usted sufre · lo que nadie quiere tocar— y de ahí le propone segmentos hasta que quede uno solo.
+**Si no sabe por dónde empezar**, arranque igual. La herramienta le ofrece cinco sectores para escoger y, si con eso no basta, le pregunta por los cuatro sitios donde buscar oportunidad —lo que cambió · industrias rotas · lo que usted sufre · lo que nadie quiere tocar— y de ahí le propone segmentos hasta que quede uno solo.
 
 ---
 

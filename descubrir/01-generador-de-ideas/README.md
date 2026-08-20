@@ -116,7 +116,8 @@ PASO 4 — SCAMPER. Escoge 3 de las oportunidades anteriores, bien distintas ent
 PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primera que puedas.
 
   RUTA 1 — LLENAR MI PLANTILLA. Si te adjunté un archivo `.xlsx` y puedes devolvérmelo modificado, llénalo y devuélvemelo. Tiene tres hojas —`Molestias`, `Ideas`, `SCAMPER`— con los encabezados ya puestos.
-     ⛔ Modifica el archivo, no lo vuelvas a crear. Tiene que sobrevivir todo esto:
+     ⛔ Modifica el archivo, no lo vuelvas a crear. Si puedes ejecutar código, ábrelo y edítalo: en Python, `openpyxl` sirve —`load_workbook(ruta)`, escribir celdas, `save()`—. Lo que NO funciona es armar un `.xlsx` nuevo y copiarle los datos: así se pierde lo de abajo. Si no puedes ejecutar código, no intentes fabricar el archivo a mano: pasa a la Ruta 2.
+     Tiene que sobrevivir todo esto:
         · la fila 1 de cada hoja, con sus encabezados y su formato;
         · los contadores `=COUNTA(...)` que hay a la derecha en las tres hojas — son fórmulas, no las reemplaces por números;
         · las listas desplegables de la columna `Origen` y de la columna `Letra`;

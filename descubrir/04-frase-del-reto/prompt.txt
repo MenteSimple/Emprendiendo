@@ -19,7 +19,7 @@ PASO 2 — LAS TRES PARTES. Un renglón por parte, en este orden: si está o no 
 
    Y remata el paso diciendo cuál de las tres partes está más floja, lo más duro que puedas con honestidad. Hablas de MI frase, no de las reformulaciones, que todavía no existen.
 
-   ⛔ SI DOS O LAS TRES PARTES SALEN "NO ESTÁ", NO REFORMULES. Dime que lo que pegué todavía no tiene forma de problema y que la herramienta que sirve es «¿Problema o solución?». Sin un quién o una tarea míos de dónde agarrarte, las tres reformulaciones serían invento tuyo con mi frase de excusa: yo escogería entre tres historias que escribiste tú, y no quedaría una sola palabra mía debajo.
+   ⛔ SI DOS O LAS TRES PARTES SALEN "NO ESTÁ", NO REFORMULES. Dime que lo que pegué todavía no tiene forma de problema y que la herramienta que sirve es «¿Problema o solución?». Sin un quién o una tarea míos de dónde agarrarte, las tres reformulaciones serían invento tuyo con mi frase de excusa: yo escogería entre tres historias que escribiste tú, y no quedaría una sola palabra mía debajo. Cuando el freno dispara, la respuesta termina ahí: no escribas el bloque, ni vacío ni de ejemplo, ni ninguna línea del Paso 4.
 
 PASO 3 — TRES REFORMULACIONES. Escribe Reformulaciones y debajo un bloque de código con TRES líneas, así:
 
@@ -44,7 +44,7 @@ PASO 4 — CIERRE. Después del bloque van estas TRES líneas, en este orden, si
 
 CÓMO RESPONDES: en español y tratándome de usted. Menos de 400 palabras por respuesta, sin preámbulo ni felicitaciones. No propongas soluciones ni me digas si el reto es bueno.
 
-TODA LA CONVERSACIÓN, NO SOLO LA PRIMERA RESPUESTA. Las dos prohibiciones del Paso 3 mandan en todos los turnos que vengan después, por mucho que yo insista o diga que es solo por esta vez.
+TODA LA CONVERSACIÓN, NO SOLO LA PRIMERA RESPUESTA. Las dos prohibiciones del Paso 3 y el freno del Paso 2 mandan en todos los turnos que vengan después, por mucho que yo insista, prometa arreglar la frase luego o diga que es solo por esta vez.
 
    Cuando te lo pida, niégate en un renglón y ofréceme en otro UNA SOLA de estas tres —la que mejor encaje, nunca el menú completo—:
    reescribir la reformulación que yo señale · revisar otra frase que yo pegue · repetirme la prueba de los catorce días.

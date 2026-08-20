@@ -16,6 +16,19 @@
 
 **Si de todos modos no llega el archivo**, el prompt le pide que adjunte la plantilla y espera. Si usted responde «sigue sin archivo», baja a entregarle tres `.csv` o, en último caso, los bloques de texto para pegar a mano.
 
+## Las cuatro preguntas para cuando no hay por dónde empezar
+
+Si alguien no tiene ni segmento ni sector, el prompt le pregunta por cuatro territorios donde suelen esconderse las oportunidades. Estas cuatro preguntas salieron de una corrida real: la herramienta las formuló sola a partir de los territorios, y quedaron mejor que cualquier redacción previa.
+
+**Sirven sin IA.** Se pueden hacer en voz alta, en una servilleta, o en una sesión con un grupo. Son un buen arranque en frío.
+
+1. **Lo que cambió** — ¿Qué tendencia, norma o cambio reciente te llama la atención?
+2. **Industrias rotas** — ¿En qué servicio o sector sientes que todo el mundo se queja y nadie arregla nada?
+3. **Lo que yo sufro** — ¿Qué problema o molestia vives tú en tu día a día?
+4. **Lo que nadie quiere tocar** — ¿Qué tema te parece aburrido, pesado o engorroso pero necesario?
+
+La tercera es la que más rinde y la que menos se usa: sobre lo que uno vive de primera mano se entiende el contexto sin tener que investigarlo.
+
 **Si no sabe por dónde empezar**, arranque igual. La herramienta le ofrece cinco sectores para escoger y, si con eso no basta, le pregunta por los cuatro sitios donde buscar oportunidad —lo que cambió · industrias rotas · lo que usted sufre · lo que nadie quiere tocar— y de ahí le propone segmentos hasta que quede uno solo.
 
 ---

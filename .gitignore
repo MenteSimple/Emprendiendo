@@ -4,3 +4,6 @@
 
 # macOS
 .DS_Store
+
+# Archivos temporales de Excel: aparecen al abrir un .xlsx y no son el archivo
+~$*

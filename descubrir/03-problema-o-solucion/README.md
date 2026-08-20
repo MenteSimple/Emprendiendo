@@ -6,6 +6,8 @@
 
 Es la herramienta más pequeña del repositorio y probablemente la que más se usa. La confusión entre problema y solución no se resuelve una vez: reaparece cada vez que uno se entusiasma.
 
+**El prompt suelto**, por si prefiere copiarlo sin leer nada: [`prompt.txt`](prompt.txt). Se genera del bloque de más abajo, así que las dos versiones dicen siempre lo mismo.
+
 ---
 
 ```

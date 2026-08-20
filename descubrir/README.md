@@ -8,10 +8,10 @@ Las cuatro herramientas cubren el arco completo, y cambian de papel a la mitad. 
 
 | # | Herramienta | Movimiento | Después de… | Toma |
 |---|---|---|---|---|
-| 1 | [Generador de ideas](01-generador-de-ideas.md) | divergir | generar por su cuenta, para estirar la lista | 15 min |
-| 2 | [Descarte y filtros](02-descarte-y-filtros.md) | converger | que el equipo cortó y eligió finalistas | 20 min |
-| 3 | [¿Problema o solución?](03-problema-o-solucion.md) | converger | escribir cualquier enunciado | 1 min |
-| 4 | [Afilador del reto](04-frase-del-reto.md) | converger | escribir la frase del reto | 15 min |
+| 1 | [Generador de ideas](01-generador-de-ideas/) | divergir | generar por su cuenta, para estirar la lista | 15 min |
+| 2 | [Descarte y filtros](02-descarte-y-filtros/) | converger | que el equipo cortó y eligió finalistas | 20 min |
+| 3 | [¿Problema o solución?](03-problema-o-solucion/) | converger | escribir cualquier enunciado | 1 min |
+| 4 | [Afilador del reto](04-frase-del-reto/) | converger | escribir la frase del reto | 15 min |
 
 La número 3 es transversal: se usa suelta, cada vez que aparece un enunciado nuevo, y se puede volver a ella cincuenta veces.
 

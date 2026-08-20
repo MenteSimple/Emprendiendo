@@ -6,6 +6,10 @@
 
 **Cuándo se usa:** al final de su propia sesión de generación, para estirar la lista. Genere primero por su cuenta: producir alternativas sin editarse es un músculo, y esta suele ser la única sesión dedicada a ejercitarlo. Después traiga la máquina y llévese el doble.
 
+**La plantilla está en esta misma carpeta:** [`plantilla-ideas.xlsx`](plantilla-ideas.xlsx). Tres hojas —`Molestias`, `Ideas`, `SCAMPER`— con los encabezados puestos, listas desplegables y un contador que le dice cuántas lleva. Descárguela antes de empezar.
+
+**El prompt suelto**, por si prefiere copiarlo sin leer nada: [`prompt.txt`](prompt.txt). Se genera del bloque de más abajo, así que las dos versiones dicen siempre lo mismo.
+
 **Cómo llega a la plantilla.** La mejor ruta, y la que conviene intentar primero: **adjunte la plantilla al chat antes de pegar el prompt.** Si su herramienta acepta archivos y los devuelve —ChatGPT y Claude lo hacen; Gemini depende de la versión—, le devuelve la plantilla llena y eso ya es el entregable, sin copiar ni pegar nada.
 
 Si no, el prompt baja solo a la siguiente ruta: tres `.csv` listos para abrir. Y si tampoco, quedan los tres bloques de líneas sueltas, que se pegan en la primera celda de cada columna y Excel reparte una línea por fila.

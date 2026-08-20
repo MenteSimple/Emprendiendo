@@ -25,16 +25,37 @@ Cada archivo tiene un bloque de código con el prompt completo. En GitHub, ese b
 
 No hace falta instalar nada ni abrir cuenta en ningún servicio nuevo. Están escritos para funcionar igual en cualquier modelo razonablemente reciente.
 
+## Cómo está organizado
+
+Una carpeta por herramienta. Al abrirla, GitHub muestra su `README.md`, que explica cuándo se usa, trae el prompt completo con botón de copiar y dice qué esperar de la respuesta. Al lado va el `prompt.txt` —el prompt solo, para quien lo quiera sin leer nada— y los archivos que esa herramienta necesite.
+
+```
+descubrir/
+└── 01-generador-de-ideas/
+    ├── README.md              qué es, cuándo se usa, el prompt, qué revisar
+    ├── prompt.txt             el prompt solo
+    └── plantilla-ideas.xlsx   el archivo donde se vacía el resultado
+```
+
+⚠️ **El `prompt.txt` se genera, no se edita.** Sale del primer bloque de código del `README.md`, que es la única fuente. Si hay que corregir un prompt, se corrige el README y se corre:
+
+```bash
+python3 extraer-prompts.py            # regenera todos
+python3 extraer-prompts.py --revisar   # solo avisa si alguno quedó viejo
+```
+
+Es una precaución con motivo: un prompt escrito en dos archivos se desincroniza a la primera corrección, y entonces la mitad de la gente usa una versión y la otra mitad otra.
+
 ## Catálogo
 
 ### [Descubrir](descubrir/) — de la idea suelta al reto elegido
 
 | Herramienta | Movimiento | Se usa… |
 |---|---|---|
-| [Generador de ideas](descubrir/01-generador-de-ideas.md) | divergir | al final de su propia sesión de generación, para estirar la lista |
-| [Descarte y filtros](descubrir/02-descarte-y-filtros.md) | converger | después de que el equipo cortó y eligió finalistas |
-| [¿Problema o solución?](descubrir/03-problema-o-solucion.md) | converger | cada vez que escriba un enunciado que crea que es un problema |
-| [Afilador del reto](descubrir/04-frase-del-reto.md) | converger | después de escribir la frase del reto |
+| [Generador de ideas](descubrir/01-generador-de-ideas/) | divergir | al final de su propia sesión de generación, para estirar la lista |
+| [Descarte y filtros](descubrir/02-descarte-y-filtros/) | converger | después de que el equipo cortó y eligió finalistas |
+| [¿Problema o solución?](descubrir/03-problema-o-solucion/) | converger | cada vez que escriba un enunciado que crea que es un problema |
+| [Afilador del reto](descubrir/04-frase-del-reto/) | converger | después de escribir la frase del reto |
 
 Proponer · Modelar · Validar — en construcción.
 

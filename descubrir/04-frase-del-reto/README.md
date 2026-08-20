@@ -6,6 +6,8 @@
 
 **Qué no hace:** no escribe la frase definitiva. Una frase de reto que el equipo no redactó no la sabe defender, y la van a tener que defender muchas veces.
 
+**El prompt suelto**, por si prefiere copiarlo sin leer nada: [`prompt.txt`](prompt.txt). Se genera del bloque de más abajo, así que las dos versiones dicen siempre lo mismo.
+
 ---
 
 ## La estructura

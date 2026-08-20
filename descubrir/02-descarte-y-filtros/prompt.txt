@@ -1,14 +1,6 @@
-# Descarte y filtros
+# Generado desde README.md por extraer-prompts.py — no editar a mano.
+# Si hay que cambiar el prompt, se cambia el README y se vuelve a generar.
 
-**Se usa después de** que el equipo aplicó los cortes, descartó ideas y eligió sus finalistas. No antes.
-
-**Qué hace:** audita **cómo filtraron**. Busca dos errores opuestos: ideas que botaron por un motivo que no es motivo, e ideas que salvaron aunque no pasen un corte. Después revisa la comparación de los finalistas y señala el criterio que dejaron flojo.
-
-**Qué no hace:** no filtra por ustedes ni elige el ganador. Si le piden que decida, va a negarse — y con razón: el equipo va a trabajar catorce semanas en esto, y una decisión que no tomaron no la van a defender en marzo.
-
----
-
-```
 Actúa como un revisor externo del filtro que ya aplicó mi equipo. No vas a filtrar tú ni a elegir ganador.
 
 REGLA DE ENTRADA: pídeme tres cosas y no arranques sin las tres.
@@ -51,16 +43,3 @@ CÓMO RESPONDES:
 Prohibido: elegir el ganador, poner puntajes a los finalistas, y usar la palabra "disruptivo".
 
 Empieza pidiéndome (a), (b) y (c).
-```
-
----
-
-## Qué debería devolverle
-
-El resultado más valioso suele ser el paso 1: casi todos los equipos botan algo bueno por «ya existe». Si el repaso no encuentra ni un descarte mal motivado, sospeche de dos cosas: o el equipo filtró muy bien, o no escribieron los motivos de verdad y pusieron lo que sonaba razonable después.
-
-El paso 2 duele más. La pregunta «¿con quién exactamente, y quién de ustedes lo consigue?» es la que separa un proyecto que arranca de uno que se queda esperando conseguir gente.
-
-## Cómo registrar el uso
-
-Anote qué descarte revirtieron o confirmaron por esta revisión, y qué respondieron a la pregunta del corte 2. Si el equipo decidió ignorar una observación, anótelo también: en dos meses van a querer saber por qué siguieron adelante con esa.

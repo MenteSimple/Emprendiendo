@@ -137,6 +137,12 @@ PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primer
 
   Los bloques de código van SIEMPRE, cualquiera sea la ruta. Son el respaldo si el archivo llega mal.
 
+  ⛔ DECLARA LA RUTA. Termina el Paso 4B con una línea exacta que diga cuál tomaste:
+     `Ruta 1 · edité la plantilla que me adjuntaste`
+     `Ruta 2 · no había plantilla adjunta, entrego CSV`
+     `Ruta 3 · no puedo generar archivos, entrego solo texto`
+  Si fabricaste un archivo nuevo en vez de editar el que te adjuntaron, eso NO es la Ruta 1 y no sirve: pierde los contadores, las listas desplegables y el instructivo. Dilo con esta línea: `⚠️ fabriqué un archivo nuevo, no es la plantilla original`.
+
 PASO 5 — CIERRE. Fuera de los bloques de código, termina con esto y nada más:
   - Dos territorios cercanos que NO exploramos y donde valdría la pena que yo genere por mi cuenta.
   - Si alguna molestia que escribiste es un incumplimiento de la ley y no una oportunidad de negocio —salario mal pagado, contrato que no existe, descuento ilegal—, dímelo en una línea. Son problemas reales, pero se resuelven denunciando o cambiando la norma, no montando una empresa.
@@ -159,6 +165,10 @@ Empieza por el Paso 1.
 ## Qué debería devolverle
 
 Tres bloques de código rotulados —**Molestias** 15 líneas, **Ideas** 20 líneas, **SCAMPER** 14 líneas— y un cierre corto por fuera. Si le devuelve tablas, pídale «los tres bloques como líneas sueltas, sin tabla»: las tablas no se pegan bien en Excel y las líneas sí.
+
+⚠️ **El fallo más peligroso: que le entreguen un archivo fabricado.** Si el modelo no logra abrir su plantilla, algunos arman un `.xlsx` nuevo con las tres hojas y el mismo contenido. Se ve bien y no lo es: **no trae los contadores, ni las listas desplegables de `Origen` y `Letra`, ni el panel «Cómo se llena»**. Pasó en una prueba real con Copilot, que lo dijo sin que nadie preguntara: *«no pude acceder a la plantilla original del enlace… generé un archivo Excel nuevo»*. Ábralo y mire a la derecha de la hoja `Ideas`: si no están «Ideas escritas», «Meta del taller» y «★ marcadas», ese archivo no es la plantilla. Vuelva a empezar **adjuntando** el archivo.
+
+⚠️ **La columna `Origen` tiene que decir `X` en las 34 filas.** Si aparece alguna `P` o alguna `S`, el modelo le está atribuyendo ideas que no son suyas.
 
 ⚠️ **Si se frena y le pregunta algo a mitad de camino, es un defecto conocido.** Debe ir del Paso 2 al 5 de corrido. La única pausa legítima es cuando no adjuntó la plantilla. Si le pregunta cuáles tres ideas escoger, respóndale «escoge tú» y siga — pasó en una prueba real y por eso el prompt ahora se lo prohíbe.
 

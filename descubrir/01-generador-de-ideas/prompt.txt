@@ -117,6 +117,12 @@ PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primer
 
   Los bloques de código van SIEMPRE, cualquiera sea la ruta. Son el respaldo si el archivo llega mal.
 
+  ⛔ DECLARA LA RUTA. Termina el Paso 4B con una línea exacta que diga cuál tomaste:
+     `Ruta 1 · edité la plantilla que me adjuntaste`
+     `Ruta 2 · no había plantilla adjunta, entrego CSV`
+     `Ruta 3 · no puedo generar archivos, entrego solo texto`
+  Si fabricaste un archivo nuevo en vez de editar el que te adjuntaron, eso NO es la Ruta 1 y no sirve: pierde los contadores, las listas desplegables y el instructivo. Dilo con esta línea: `⚠️ fabriqué un archivo nuevo, no es la plantilla original`.
+
 PASO 5 — CIERRE. Fuera de los bloques de código, termina con esto y nada más:
   - Dos territorios cercanos que NO exploramos y donde valdría la pena que yo genere por mi cuenta.
   - Si alguna molestia que escribiste es un incumplimiento de la ley y no una oportunidad de negocio —salario mal pagado, contrato que no existe, descuento ilegal—, dímelo en una línea. Son problemas reales, pero se resuelven denunciando o cambiando la norma, no montando una empresa.

@@ -7,10 +7,12 @@ Herramientas de IA para emprender: prompts en español que se usan **después** 
 ⛔ **No es material de ninguna universidad.** Nada acá puede nombrar una institución, usar sus marcas, ni suponer que quien lee está matriculado en algo. Los criterios salen del método propio del autor, pero el vocabulario del aula se cuela solo —«la entrega», «la sesión», «su equipo del curso»—. Antes de publicar cualquier herramienta:
 
 ```bash
-grep -rniE "uniandes|universidad|facultad|admi|nrc|bloque ne[óo]n|brightspace|syllabus|la entrega|la sesi[óo]n" --include='*.md' --include='*.txt' .
+grep -rniE "uniandes|universidad|facultad|\badmi\b|nrc|bloque ne[óo]n|brightspace|syllabus|la entrega|la sesi[óo]n|estudiante|profesor" --include='*.md' --include='*.txt' --include='*.py' .
 ```
 
-Y para los `.xlsx`, mirar también adentro: el texto de las celdas no aparece en un `grep` normal.
+Y para los `.xlsx`, mirar también adentro: el texto de las celdas no aparece en un `grep` normal. Los `.py` van incluidos porque los generadores de plantilla llevan texto adentro que termina en las celdas.
+
+`estudiante` y `profesor` dan positivos legítimos: son públicos objetivo como cualquier otro, y «estudiantes que viven solos» es una idea válida. Lo que hay que cazar es que así se le diga a **quien lee** — eso presupone matrícula, y estuvo seis veces en el prompt de la 01 sin que nadie lo notara, porque la palabra no estaba en este patrón. El `grep` avisa; quien decide es una persona.
 
 ## Estructura
 

@@ -69,7 +69,7 @@ PASO 3 — OPORTUNIDADES DE NEGOCIO. Genera 20 ideas que sean oportunidades de n
 
   SALIDA: escribe la palabra **Ideas** en una línea suelta, y debajo un bloque de código con exactamente 20 líneas, una idea por línea, con sus tres partes. Sin numerar, sin viñetas, sin tabla. Nada más dentro del bloque.
 
-PASO 4 — SCAMPER. Escoge 3 de las oportunidades anteriores, bien distintas entre sí. Di cuáles escogiste. Después produce EXACTAMENTE 14 ideas nuevas en total —no 14 por idea, 14 contando todo— repartidas así: dos por cada letra, tomando para cada letra la idea que mejor se preste.
+PASO 4 — SCAMPER. Escoge TÚ 3 de las oportunidades anteriores, bien distintas entre sí. ⛔ No me preguntes cuáles: decides tú y sigues. Solo dime en una línea cuáles escogiste, y continúa sin esperar respuesta. Después produce EXACTAMENTE 14 ideas nuevas en total —no 14 por idea, 14 contando todo— repartidas así: dos por cada letra, tomando para cada letra la idea que mejor se preste.
 
   S · Sustituir — ¿qué pieza cambio por otra?
   C · Combinar — ¿con qué otro servicio lo junto?
@@ -123,6 +123,7 @@ PASO 5 — CIERRE. Fuera de los bloques de código, termina con esto y nada más
   - Un recordatorio de una línea: que marque con ★ las tres que más ganas tenga de contarle a alguien, y que ★ no significa "las que van a funcionar" sino cuáles le provocan.
 
 CÓMO RESPONDES:
+- ⛔ DE CORRIDO, SIN PEDIR PERMISO. Una vez que respondí las cuatro preguntas del Paso 1, ejecuta los pasos 2, 3, 4, 4B y 5 en una sola respuesta, sin detenerte a preguntarme nada ni a pedir confirmación entre uno y otro. Hay exactamente UNA pausa permitida en todo el flujo: la del Paso 4B cuando no te adjunté el archivo. Ninguna otra.
 - En español, sin preámbulo, sin felicitaciones y sin explicarme qué vas a hacer antes de hacerlo.
 - Respeta los conteos: 15, 20 y 14. Si te sobran, guárdalas y ofrécemelas al final.
 - Cantidad por encima de elegancia. Prefiero 20 oportunidades desparejas a 8 pulidas.

@@ -89,7 +89,7 @@ PASO 3 — OPORTUNIDADES DE NEGOCIO. Genera 20 ideas que sean oportunidades de n
 
   SALIDA: escribe la palabra **Ideas** en una línea suelta, y debajo un bloque de código con exactamente 20 líneas, una idea por línea, con sus tres partes. Sin numerar, sin viñetas, sin tabla. Nada más dentro del bloque.
 
-PASO 4 — SCAMPER. Escoge 3 de las oportunidades anteriores, bien distintas entre sí. Di cuáles escogiste. Después produce EXACTAMENTE 14 ideas nuevas en total —no 14 por idea, 14 contando todo— repartidas así: dos por cada letra, tomando para cada letra la idea que mejor se preste.
+PASO 4 — SCAMPER. Escoge TÚ 3 de las oportunidades anteriores, bien distintas entre sí. ⛔ No me preguntes cuáles: decides tú y sigues. Solo dime en una línea cuáles escogiste, y continúa sin esperar respuesta. Después produce EXACTAMENTE 14 ideas nuevas en total —no 14 por idea, 14 contando todo— repartidas así: dos por cada letra, tomando para cada letra la idea que mejor se preste.
 
   S · Sustituir — ¿qué pieza cambio por otra?
   C · Combinar — ¿con qué otro servicio lo junto?
@@ -143,6 +143,7 @@ PASO 5 — CIERRE. Fuera de los bloques de código, termina con esto y nada más
   - Un recordatorio de una línea: que marque con ★ las tres que más ganas tenga de contarle a alguien, y que ★ no significa "las que van a funcionar" sino cuáles le provocan.
 
 CÓMO RESPONDES:
+- ⛔ DE CORRIDO, SIN PEDIR PERMISO. Una vez que respondí las cuatro preguntas del Paso 1, ejecuta los pasos 2, 3, 4, 4B y 5 en una sola respuesta, sin detenerte a preguntarme nada ni a pedir confirmación entre uno y otro. Hay exactamente UNA pausa permitida en todo el flujo: la del Paso 4B cuando no te adjunté el archivo. Ninguna otra.
 - En español, sin preámbulo, sin felicitaciones y sin explicarme qué vas a hacer antes de hacerlo.
 - Respeta los conteos: 15, 20 y 14. Si te sobran, guárdalas y ofrécemelas al final.
 - Cantidad por encima de elegancia. Prefiero 20 oportunidades desparejas a 8 pulidas.
@@ -158,6 +159,8 @@ Empieza por el Paso 1.
 ## Qué debería devolverle
 
 Tres bloques de código rotulados —**Molestias** 15 líneas, **Ideas** 20 líneas, **SCAMPER** 14 líneas— y un cierre corto por fuera. Si le devuelve tablas, pídale «los tres bloques como líneas sueltas, sin tabla»: las tablas no se pegan bien en Excel y las líneas sí.
+
+⚠️ **Si se frena y le pregunta algo a mitad de camino, es un defecto conocido.** Debe ir del Paso 2 al 5 de corrido. La única pausa legítima es cuando no adjuntó la plantilla. Si le pregunta cuáles tres ideas escoger, respóndale «escoge tú» y siga — pasó en una prueba real y por eso el prompt ahora se lo prohíbe.
 
 ⚠️ **Mire la línea de verificación de SCAMPER.** Debe decir `S=2 C=2 A=2 M=2 P=2 E=2 R=2`. Si algún número no da 2, la lista quedó corrida y al pegarla en la plantilla cada idea va a caer junto a la letra equivocada. Pídale que la rehaga: en las pruebas falló una de cada dos veces, y es el único error de esta herramienta que el estudiante no puede detectar solo.
 

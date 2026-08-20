@@ -104,7 +104,7 @@ La columna `Revisión` llena en las tres hojas, y **nada más tocado**. Si le ca
 
 ⚠️ **Los contadores van a verse vacíos, y no es un fallo del modelo.** Al guardar con `openpyxl` las fórmulas `=COUNTA(...)` de `G11:G13` quedan sin su último valor calculado, así que esas celdas aparecen en blanco hasta que Excel las recalcule al abrir. Lo que hay que mirar es que sigan siendo fórmulas y no números escritos a mano.
 
-**Por qué no hay una vía de «péguelas en el chat».** Sería cómodo ofrecerla y no está probada: la regla 5 del repositorio nació de ofrecer una segunda vía que no funcionaba, y hasta que alguien la corra de verdad, esta herramienta pide el archivo y punto.
+**Por qué no hay una vía de «péguelas en el chat».** Sería cómodo ofrecerla y no está probada: la regla 6 del repositorio nació de ofrecer una segunda vía que no funcionaba, y hasta que alguien la corra de verdad, esta herramienta pide el archivo y punto.
 
 ## Lo que más suele aparecer
 

@@ -13,15 +13,17 @@ Actualizado: **20 de agosto de 2026**
 
 ## Lo que hay que hacer, en orden
 
-**1 · La 02 está lista, salvo por un detalle.** Las tres corridas en contexto aislado pasaron el 20 de agosto —el caso claro, el torcido y el de sin adjuntar archivo— y están contadas en su README. Queda vivo un defecto menor: el límite de «máximo dos frases» se pasó en 4 de las 26 revisiones escritas. Decidir si se corrige y se vuelve a correr, o si se publica así y queda anotado.
+**1 · La 02 está lista, salvo por dos cosas.** Las tres corridas en contexto aislado pasaron el 20 de agosto —el caso claro, el torcido y el de sin adjuntar archivo— y están contadas en su README. Queda vivo un defecto menor: el límite de «máximo dos frases» se pasó en 4 de las 26 revisiones escritas. Decidir si se corrige y se vuelve a correr, o si se publica así y queda anotado. Y falta confirmar contra la **regla 3** —la orden en imperativo, nunca en forma de pregunta—, que no estaba en la lista cuando se escribió la herramienta.
 
 Falta también lo que necesita a una persona presente: correrla en varios motores. La 01 se probó en tres; esta, en uno solo.
 
-**2 · Rehacer la 03 y la 04.** Las que están publicadas son borradores del principio de la sesión, escritos bajo un principio que después resultó equivocado —«interroga, no produce»— y sin ninguna de las nueve reglas. Hay que reescribirlas desde cero conservando lo que sigue siendo válido: las tres categorías de enunciado en la 03, y la plantilla «A ___ le cuesta ___ porque ___» con sus ejemplos en la 04.
+**2 · Volver a correr la 01.** «El estudiante» ya salió: los seis usos donde así se le decía a quien usa la herramienta pasaron a «quien te escribe», y el `prompt.txt` está regenerado. Los de la línea 49 y los de la 04 se quedaron, porque ahí «estudiantes» es un segmento de clientes. Pero el cambio **dejó sin validar la única herramienta que estaba probada**: el prompt que se corrió contra Copilot, Gemini y Claude ya no es el que está publicado. Hay que repetirle las tres corridas.
+
+**3 · Rehacer la 03 y la 04.** Las que están publicadas son borradores del principio de la sesión, escritos bajo un principio que después resultó equivocado —«interroga, no produce»— y sin ninguna de las diez reglas. Hay que reescribirlas desde cero conservando lo que sigue siendo válido: las tres categorías de enunciado en la 03, y la plantilla «A ___ le cuesta ___ porque ___» con sus ejemplos en la 04.
 
 Decisión ya tomada sobre archivos: la 03 **no** lleva plantilla —es un enunciado y una respuesta en un minuto— y la 04 tampoco, pero devuelve la frase en un formato fijo.
 
-**3 · Volver a auditar antes de publicar.** El `grep` institucional de `CLAUDE.md`, y para los `.xlsx` mirar también el texto de las celdas.
+**4 · Volver a auditar antes de publicar.** El grep institucional de `CLAUDE.md`, y para los `.xlsx` mirar también el texto de las celdas.
 
 ## Lo que quedó decidido y no hay que volver a discutir
 
@@ -43,7 +45,7 @@ Los rótulos testigo están en `Descartadas!F11:F13` — «Descartes revisados»
 2. La hoja solo tenía columna para el corte 2. Los cortes 1 y 3 había que adivinarlos de la línea de la idea.
 3. `Finalistas` no tenía dónde escribir los nombres de los tres, así que la revisión solo podía decir «el ②».
 4. El Paso 1 declaraba dos pausas y abría una tercera con «pregúntamelo si no te lo di» sobre el plazo.
-5. Se ofrecía pegar las ideas en el chat como alternativa al archivo, sin haberla corrido nunca — la regla 5, otra vez.
+5. Se ofrecía pegar las ideas en el chat como alternativa al archivo, sin haberla corrido nunca — la regla 6, otra vez.
 
 Los tres riesgos que estaban sin probar, ya probados el 20 de agosto:
 

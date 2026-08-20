@@ -87,3 +87,17 @@ Las versiones ligeras —Flash-Lite y equivalentes— **no ejecutan código**: n
 - Nada codificado solo por color; el estado lo lleva un símbolo con silueta propia.
 - Los archivos del repo **no llevan frontmatter**: se leen en GitHub, no en Obsidian.
 - Commits en español, explicando el porqué y no solo el qué.
+
+## Agent skills
+
+### Issue tracker
+
+Los issues, specs y mapas de `/wayfinder` viven en GitHub Issues de `MenteSimple/Emprendiendo`, con el CLI `gh`. El repositorio es **público**: todo ticket nace publicado, así que el `grep` institucional aplica antes de escribirlo, no antes de publicarlo. Ver `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Las cinco etiquetas canónicas, sin renombrar. Ver `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Contexto único: `CONTEXT.md` y `docs/adr/` en la raíz, creados solo cuando haya algo que escribir. Ver `docs/agents/domain.md`.

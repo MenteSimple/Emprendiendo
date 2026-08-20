@@ -97,7 +97,7 @@ PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primer
      Escribe desde la fila 2, así:
         `Molestias` — las 15, **conservando las marcas (?)** tal como las escribiste. Son la señal de qué hay que ir a verificar y no se pueden perder al pasar al archivo.
         `SCAMPER` — las 14, junto a la letra que ya está puesta en la columna A.
-        `Ideas` — **34 filas: las 20 oportunidades y además las 14 de SCAMPER.** La plantilla lo pide así en su propio panel «Cómo se llena», y su meta es 34.
+        `Ideas` — **34 filas**: las 20 oportunidades en las filas 2 a 21, y las 14 de SCAMPER en las filas 22 a 35. La plantilla lo pide así en su propio panel «Cómo se llena», y su meta es 34.
         `★` — vacía siempre. Esa la marca el estudiante.
 
      ⛔ ORIGEN = X EN LAS 34, SIN EXCEPCIÓN. La plantilla explica que `P` es para lo que observó el estudiante y `S` para lo que él sacó de SCAMPER. Esas dos letras son para SU trabajo, no para el tuyo: todo lo que generaste tú es `X`, incluidas las de SCAMPER, porque las produjiste tú y no él. Marcarlas `P` o `S` le atribuye al estudiante ideas que no son suyas y arruina lo único que ese registro sirve para saber: cuáles ideas sobrevivieron al filtro, si las de él o las de la máquina. Ante la duda, `X`.

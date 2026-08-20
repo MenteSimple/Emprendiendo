@@ -22,27 +22,29 @@ Esta es la parte que no se ve hasta que uno prueba. Un asistente al que se le pi
 
 Las reglas que siguen existen contra esos tres comportamientos.
 
-## Las reglas
+## Las diez reglas, y de dónde salió cada una
 
-**Pida contexto antes de producir.** Sin insumo propio, la herramienta no arranca. Es lo que separa una que ayuda de una que reemplaza.
+Salen de correr la herramienta 01 contra Copilot, Gemini y Claude el 19 de agosto de 2026. Ninguna es teórica.
 
-**Prohíba las pausas, salvo una.** Todos los pasos en una sola respuesta. Si hay una pausa legítima —falta un archivo, falta un dato que solo la persona tiene—, declárela como la única, con la frase exacta que debe decir.
+**1 · Pida contexto antes de producir.** Sin insumo propio, la herramienta no arranca. Es lo que separa una que ayuda de una que reemplaza. Funcionó en los tres motores.
 
-**Nunca ponga la orden en forma de pregunta.** «Escoge tres de las anteriores» se lee como consulta. «Escoge TÚ tres, no me preguntes cuáles, decide y sigue» no.
+**2 · Prohíba las pausas, salvo una.** Todos los pasos en una sola respuesta. Si hay una pausa legítima —falta un archivo, falta un dato que solo la persona tiene—, declárela como la única, con la frase exacta que debe decir. Cada pregunta a mitad de camino es una oportunidad de que la persona conteste cualquier cosa con tal de avanzar. *Origen:* Claude se frenó en el Paso 4 de la 01 y hubo que responderle «escoge tú».
 
-**Verifique con algo que no se pueda inventar.** No pida una frase, pida un dato que solo exista si el trabajo se hizo: el texto de una celda que no aparezca en el prompt, un valor calculado, un conteo real. Y ofrezca la salida honesta: «si no pudiste, escribe NO PUDE y no inventes».
+**3 · Nunca ponga la orden en forma de pregunta.** «Escoge tres de las anteriores» se lee como consulta. «Escoge TÚ tres, no me preguntes cuáles, decide y sigue» no. *Origen:* la frase exacta que frenó a Claude en el Paso 4 —la misma de la regla 2—: era una orden escrita como pregunta, y por eso se leyó como pregunta.
 
-**Obligue a declarar el camino.** Una línea fija al final: qué ruta tomó, qué hizo, qué no pudo. No evita el fallo, lo vuelve visible.
+**4 · Verifique con algo que no se pueda inventar.** No pida una frase, pida un dato que solo exista si el trabajo se hizo: el texto de una celda que no aparezca en el prompt, un valor calculado, un conteo real. Y ofrezca la salida honesta: «si no pudiste, escribe NO PUDE y no inventes». Si se le da la frase con la que debe certificar algo, la escribe sin hacer nada: una plantilla de verificación es un formulario en blanco. *Origen:* Gemini 3.5 Flash-Lite, que no ejecuta código y no generó ningún archivo, escribió igual «Leído del archivo · contadores 15/34/14 · fórmulas intactas».
 
-**No ofrezca una alternativa sin haberla probado sola.** Dos caminos que parecen equivalentes y no lo son son peores que uno solo. Si la vía B depende en secreto de la A, va a fallar justo cuando la A no está.
+**5 · Obligue a declarar el camino.** Una línea fija al final: qué ruta tomó, qué hizo, qué no pudo. No evita el fallo, lo vuelve visible. Un fallo declarado se corrige; uno silencioso se entrega. *Origen:* Copilot no pudo abrir la plantilla y fabricó un `.xlsx` nuevo —con las hojas correctas y sin fórmulas ni listas—, y solo se supo porque lo mencionó de pasada.
 
-**Lea lo que su propio material dice adentro.** Si la herramienta entrega un archivo o una plantilla, eso suele traer instrucciones propias. Un prompt que las contradice pierde: el modelo le hará caso al material, y con razón.
+**6 · No ofrezca una alternativa sin haberla probado sola.** Dos caminos que parecen equivalentes y no lo son son peores que uno solo. Si la vía B depende en secreto de la A, va a fallar justo cuando la A no está. *Origen:* se agregó «bájala de esta URL» como alternativa a adjuntar el archivo. Ninguno de los tres motores pudo: adjuntar el archivo es lo que activa el entorno de código, así que la segunda vía dependía de la primera. Costó tres corridas fallidas.
 
-**Repita los números y pida el conteo final.** Un modelo al que se le piden 15 devuelve 15 o 20. Si la cantidad importa, dígala dos veces y exija el conteo real al cerrar.
+**7 · Lea lo que su propio material dice adentro.** Si la herramienta entrega un archivo o una plantilla, eso suele traer instrucciones propias. Un prompt que las contradice pierde: el modelo le hará caso al material, y con razón. *Origen:* el prompt decía «20 filas, Origen X» y el panel de la plantilla decía que las de SCAMPER van también en esa hoja con meta 34. Gemini le hizo caso a la plantilla —con razón— y marcó mal la columna.
 
-**Marque lo generado.** Lo que produjo la máquina va señalado, y esa marca no se puede confundir con la del trabajo de la persona. Sirve para lo único que importa después: ver qué sobrevivió, si lo propio o lo generado.
+**8 · Repita los números y pida el conteo final.** Un modelo al que se le piden 15 devuelve 15 o 20. Si la cantidad importa, dígala dos veces y exija el conteo real al cerrar.
 
-**Las reglas van al prompt; las explicaciones, al documento.** El modelo necesita la regla. El porqué lo lee una persona. Un prompt con ensayos adentro crece sin mejorar y se vuelve imposible de pegar desde un celular.
+**9 · Marque lo generado.** Lo que produjo la máquina va señalado, y esa marca no se puede confundir con la del trabajo de la persona. Sirve para lo único que importa después: ver qué sobrevivió, si lo propio o lo generado.
+
+**10 · Las reglas van al prompt; las explicaciones, al documento.** El modelo necesita la regla. El porqué lo lee una persona. Un prompt con ensayos adentro crece sin mejorar y se vuelve imposible de pegar desde un celular.
 
 ## Cómo se prueba
 

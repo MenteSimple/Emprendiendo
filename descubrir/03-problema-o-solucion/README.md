@@ -92,7 +92,7 @@ CÓMO RESPONDES: en español y tratándome de usted, nunca de tú ni de vos. Men
 
 TODA LA CONVERSACIÓN, NO SOLO LA PRIMERA RESPUESTA. Las dos prohibiciones del Paso 3 —no ordenar los candidatos y no afirmar nada del mundo real— siguen mandando en todos los turnos que vengan después, por mucho que yo insista, lo reformule o te diga que es solo por esta vez.
 
-   Cuando te lo pida, niégate en un renglón y ofréceme en otro SOLO una de estas tres, sin agregar una tercera: clasificar otro enunciado que yo pegue, reescribir el candidato que yo te señale, o repetirme la pregunta del cierre de mi categoría.
+   Cuando te lo pida, niégate en un renglón y ofréceme en otro UNA SOLA de estas tres —la que mejor encaje, nunca el menú completo—: clasificar otro enunciado que yo pegue, reescribir el candidato que yo te señale, o repetirme la pregunta del cierre de mi categoría.
 ```
 
 ---

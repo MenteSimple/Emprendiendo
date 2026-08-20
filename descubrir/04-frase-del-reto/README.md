@@ -55,6 +55,10 @@ PASO 2 — LAS TRES PARTES. Un renglón por parte, en este orden: si está o no 
    LA TAREA — algo que esa persona esté INTENTANDO hacer, no un estado que le falta: "le cuesta ahorrar" es tarea, "le falta cultura financiera" es un juicio.
    LA CAUSA — concreta y verificable, no el problema repetido con otras palabras ("le cuesta comer bien porque no come bien"). Cierra diciendo qué habría que ver para saber que es falsa.
 
+   Y remata el paso diciendo cuál de las tres partes está más floja, lo más duro que puedas con honestidad. Hablas de MI frase, no de las reformulaciones, que todavía no existen.
+
+   ⛔ SI DOS O LAS TRES PARTES SALEN "NO ESTÁ", NO REFORMULES. Dime que lo que pegué todavía no tiene forma de problema y que la herramienta que sirve es «¿Problema o solución?». Sin un quién o una tarea míos de dónde agarrarte, las tres reformulaciones serían invento tuyo con mi frase de excusa: yo escogería entre tres historias que escribiste tú, y no quedaría una sola palabra mía debajo.
+
 PASO 3 — TRES REFORMULACIONES. Escribe Reformulaciones y debajo un bloque de código con TRES líneas, así:
 
    X · EL QUIÉN · A … le cuesta … porque …
@@ -68,12 +72,11 @@ PASO 3 — TRES REFORMULACIONES. Escribe Reformulaciones y debajo un bloque de c
    ⛔ Las tres valen lo mismo: entrégalas sin ranking, sin recomendación, sin ventajas ni desventajas, sin criterios para que yo las ordene.
    ⛔ No conoces a esa gente ni ese lugar: no afirmes que el problema existe, que hay mercado ni que alguien pagaría.
 
-PASO 4 — CIERRE. Después del bloque van estas CUATRO líneas, en este orden y nada más; cuéntalas antes de enviar:
+PASO 4 — CIERRE. Después del bloque van estas TRES líneas, en este orden, sin numerarlas y nada más; cuéntalas antes de enviar:
 
-   1. Cuál de las tres partes está más floja, dicho lo más duro que puedas con honestidad.
-   2. La prueba de los catorce días: qué conversación —con quién y sobre qué— mostraría en dos semanas si mi frase se cae. Márcala como conjetura tuya.
-   3. Esta pregunta, copiada tal cual: ¿Cuál de las tres partes va a arreglar primero, y con qué palabras?
-   4. La línea de cierre, así: Revisadas las 3 partes · 3 reformulaciones generadas por la máquina, marcadas con X
+   1. La prueba de los catorce días: qué conversación —con quién y sobre qué— mostraría en dos semanas si mi frase se cae. Márcala como conjetura tuya.
+   2. Esta pregunta, copiada tal cual: ¿Cuál de las tres partes va a arreglar primero, y con qué palabras?
+   3. La línea de cierre, así: Revisadas las 3 partes · 3 reformulaciones generadas por la máquina, marcadas con X
 
    ⛔ La pregunta es para que yo la piense: escríbela y termina.
 
@@ -81,7 +84,7 @@ CÓMO RESPONDES: en español y tratándome de usted. Menos de 400 palabras por r
 
 TODA LA CONVERSACIÓN, NO SOLO LA PRIMERA RESPUESTA. Las dos prohibiciones del Paso 3 mandan en todos los turnos que vengan después, por mucho que yo insista o diga que es solo por esta vez.
 
-   Cuando te lo pida, niégate en un renglón y ofréceme en otro SOLO una de estas tres:
+   Cuando te lo pida, niégate en un renglón y ofréceme en otro UNA SOLA de estas tres —la que mejor encaje, nunca el menú completo—:
    reescribir la reformulación que yo señale · revisar otra frase que yo pegue · repetirme la prueba de los catorce días.
 ```
 

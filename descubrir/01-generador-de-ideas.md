@@ -1,12 +1,16 @@
 # Generador de ideas
 
-**Para qué:** producir volumen. Le da un contexto —para quién, dónde, en qué sector— y la herramienta le devuelve una lista larga de molestias observables, ideas que las atacan, y variaciones con SCAMPER.
+**Para qué:** producir volumen de **ideas de negocio**, no de ocurrencias. Le da un contexto —para quién, dónde, en qué sector— y la herramienta devuelve molestias observables, veinte negocios que las atacan y catorce variaciones con SCAMPER.
+
+**La distinción que hace útil esta herramienta:** una idea es algo que se le ocurrió; un negocio le resuelve a alguien una tarea que hoy no tiene buena solución, y ese alguien paga. «Poner etiquetas de colores por fecha de vencimiento» es un consejo y nadie paga por él. Por eso cada idea sale con tres partes: **qué se vende · a quién se le cobra · por qué pagaría**. La tercera es la que separa una lista útil de una lluvia de buenas intenciones.
 
 **Cuándo se usa:** al final de su propia sesión de generación, para estirar la lista. Genere primero por su cuenta: producir alternativas sin editarse es un músculo, y esta suele ser la única sesión dedicada a ejercitarlo. Después traiga la máquina y llévese el doble.
 
-**Cómo llega a la plantilla:** la salida viene en tres bloques de líneas sueltas, sin numerar y sin tabla. Eso es a propósito. Se selecciona un bloque, se copia, y se pega en la primera celda de la columna correspondiente: Excel reparte una línea por fila. Las columnas `#`, `Origen` y `★` ya están en la plantilla y las llena usted.
+**Cómo llega a la plantilla, por dos vías.** Si su herramienta puede generar archivos, le entrega tres `.csv` listos para abrir en Excel. Si no puede —y varias no pueden—, la salida viene igual en tres bloques de líneas sueltas: se selecciona el bloque, se copia y se pega en la primera celda de la columna, y Excel reparte una línea por fila. Las columnas `#`, `Origen` y `★` ya están en la plantilla.
 
-**Si no sabe por dónde empezar**, arranque igual. La herramienta pregunta primero y, si usted no tiene un segmento en mente, le propone opciones hasta que quede uno solo.
+⚠️ **Que las ideas salgan en pantalla y no como archivo no es una falla del prompt:** hay modelos que sencillamente no generan archivos. Por eso el prompt pide el archivo *y* los bloques, y le hace decir cuál de los dos puede.
+
+**Si no sabe por dónde empezar**, arranque igual. La herramienta le ofrece los cinco sectores del curso y, si con eso no basta, le pregunta por los cuatro sitios donde buscar oportunidad —lo que cambió · industrias rotas · lo que usted sufre · lo que nadie quiere tocar— y de ahí le propone segmentos hasta que quede uno solo.
 
 ---
 
@@ -20,7 +24,18 @@ PASO 1 — PREGÚNTAME PRIMERO. Antes de generar nada, hazme estas cuatro pregun
   3. ¿Sector o tema? Ejemplo: comida, transporte, salud, educación, servicios para negocios pequeños.
   4. ¿Qué has visto tú? Dos o tres molestias concretas que hayas observado en esa gente. Si no tienes ninguna, dilo y seguimos igual.
 
-  Si no tengo el "para quién": pregúntame el sector y propónme TRES segmentos concretos dentro de él. Si tampoco tengo sector, propón primero tres sectores donde una persona sin capital ni permisos especiales pueda empezar a hablar con gente esta misma semana, y cuando escoja uno, propónme tres segmentos dentro de ese.
+  Si no tengo el "para quién": pregúntame el sector y propónme TRES segmentos concretos dentro de él. Estos son los cinco sectores entre los que puedo escoger, ofrécemelos como lista:
+     A. Tecnología y software
+     B. Moda, belleza y consumo
+     C. Alimentos, bebidas y productos físicos
+     D. Servicios: educación, salud y bienestar, profesionales
+     E. Sostenibilidad, cultura y entretenimiento
+
+  Si tampoco sé por dónde entrar, no me des un sector al azar: hazme UNA pregunta por cada uno de estos cuatro territorios, y con lo que responda propónme los tres segmentos.
+     1. LO QUE CAMBIÓ — una tendencia, una norma nueva, algo que se abarató. Cuando el contexto cambia, tareas que estaban bien resueltas dejan de estarlo.
+     2. INDUSTRIAS ROTAS — sectores donde todo el mundo se queja y nadie arregla nada. El tamaño del fastidio suele ser proporcional a la oportunidad.
+     3. LO QUE YO SUFRO — lo que vivo de primera mano. Ahí tengo ventaja: entiendo el contexto sin investigarlo.
+     4. LO QUE NADIE QUIERE TOCAR — lo aburrido, engorroso o poco glamoroso. Casi nadie lo toca justamente por eso, y ahí queda espacio.
 
   ⛔ UN SOLO GRUPO. No arranques hasta que quede UNA sola clase de persona, la que EJECUTA la tarea. No sirve "vendedores ambulantes, cafeterías y sus clientes": son cuatro grupos y después no voy a saber con quién hablar. Si te doy varios, dime cuáles son y hazme escoger uno. El resto queda anotado para otra ronda.
 
@@ -35,14 +50,30 @@ PASO 2 — MOLESTIAS. Escribe 15 molestias concretas de esa gente: cosas que int
 
   SALIDA: escribe la palabra **Molestias** en una línea suelta, y debajo un bloque de código con 15 líneas, una molestia por línea. Sin numerar, sin viñetas, sin negritas, sin encabezado. Nada más dentro del bloque.
 
-PASO 3 — IDEAS. Genera 20 ideas que ataquen esas molestias. Reglas:
-  - Cada idea se escribe en una sola línea y termina diciendo a quién le sirve, después de un guion.
-  - Que NO sean todas aplicaciones. Al menos un tercio tiene que ser algo que no es software: un servicio, un producto físico, una forma distinta de organizar algo, un negocio de barrio.
-  - Mezcla el nivel de ambición: unas que se puedan montar el mes entrante con lo que hay, otras grandes.
+PASO 3 — IDEAS DE NEGOCIO. Genera 20, y que sean negocios, no ocurrencias.
+
+  ⛔ LA DISTINCIÓN QUE MÁS IMPORTA. Una idea es algo que se te ocurrió. Un negocio le resuelve a alguien una tarea que hoy no tiene buena solución, y ese alguien paga por eso. Si nadie paga, no es un negocio: es un consejo.
+
+  Cada línea lleva tres partes separadas por " · ":
+     qué se vende · a quién se le cobra · por qué pagaría
+
+  ASÍ SÍ:
+     Cuadernos de fiado preimpresos con copia desprendible para el cliente · se los vende el distribuidor que ya le lleva mercancía a la tienda · porque hoy pierde plata en fiados que no recuerda
+     Relevo de mostrador tres horas al mes, con persona entrenada y protocolo de entrega de caja · se le cobra al tendero una mensualidad · porque hoy no puede ir al médico sin cerrar
+
+  ASÍ NO, y son los tres errores típicos:
+     "Poner etiquetas de colores por fecha de vencimiento" → es un consejo. Nadie paga por una buena práctica.
+     "Que el restaurante respalde al mesero ante un cliente agresivo" → es una política interna. No se vende.
+     "Una app de propinas" → falta quién paga. ¿El mesero, el restaurante, el cliente? Sin eso no es una idea de negocio, es una función.
+
+  Además:
+  - Al menos un tercio NO puede ser software: un servicio, un producto físico, un negocio de barrio, una forma distinta de organizar algo.
+  - Mezcla la ambición: unas que se monten el mes entrante con lo que hay, otras grandes.
   - Que ya exista algo parecido no es problema: si existe, el problema es real. Inclúyelas.
+  - Quien paga no siempre es quien sufre la molestia. Cuando sea distinto, dilo: ahí suelen estar los mejores negocios.
   - No repitas la misma idea con otro nombre. Si dos se parecen, deja la más específica.
 
-  SALIDA: escribe la palabra **Ideas** en una línea suelta, y debajo un bloque de código con exactamente 20 líneas, una idea por línea. Sin numerar, sin viñetas, sin tabla. Nada más dentro del bloque.
+  SALIDA: escribe la palabra **Ideas** en una línea suelta, y debajo un bloque de código con exactamente 20 líneas, una idea por línea, con sus tres partes. Sin numerar, sin viñetas, sin tabla. Nada más dentro del bloque.
 
 PASO 4 — SCAMPER. Escoge 3 ideas de las anteriores, bien distintas entre sí. Di cuáles escogiste. Después produce EXACTAMENTE 14 ideas nuevas en total —no 14 por idea, 14 contando todo— repartidas así: dos por cada letra, tomando para cada letra la idea que mejor se preste.
 
@@ -59,6 +90,12 @@ PASO 4 — SCAMPER. Escoge 3 ideas de las anteriores, bien distintas entre sí. 
   SALIDA: escribe la palabra **SCAMPER** en una línea suelta, y debajo un bloque de código con exactamente 14 líneas, en este orden fijo y sin escribir la letra: S, S, C, C, A, A, M, M, P, P, E, E, R, R. Una idea por línea. Ese orden importa porque la plantilla ya trae las letras puestas en ese mismo orden.
 
   Inmediatamente después del bloque, FUERA del código, escribe una sola línea de verificación con el conteo real de lo que acabas de entregar, así: `Verificación · S=2 C=2 A=2 M=2 P=2 E=2 R=2`. Si algún número no da 2, rehaz el bloque antes de seguir.
+
+PASO 4B — ARCHIVOS. Si tu herramienta puede generar archivos para descargar, entrégame tres `.csv` con codificación UTF-8, además de los bloques:
+  `molestias.csv` — una columna: Molestia
+  `ideas.csv` — cuatro columnas: #, Idea, Origen, ★  (numera desde 1, pon X en Origen, deja ★ vacía)
+  `scamper.csv` — dos columnas: Letra, Idea nueva  (con la letra escrita, en el orden S,S,C,C,A,A,M,M,P,P,E,E,R,R)
+Si no puedes generar archivos, dime en una sola línea "no puedo generar archivos" y ya: los bloques bastan.
 
 PASO 5 — CIERRE. Fuera de los bloques de código, termina con esto y nada más:
   - Dos territorios cercanos que NO exploramos y donde valdría la pena que yo genere por mi cuenta.
@@ -83,7 +120,9 @@ Tres bloques de código rotulados —**Molestias** 15 líneas, **Ideas** 20 lín
 
 ⚠️ **Mire la línea de verificación de SCAMPER.** Debe decir `S=2 C=2 A=2 M=2 P=2 E=2 R=2`. Si algún número no da 2, la lista quedó corrida y al pegarla en la plantilla cada idea va a caer junto a la letra equivocada. Pídale que la rehaga: en las pruebas falló una de cada dos veces, y es el único error de esta herramienta que el estudiante no puede detectar solo.
 
-Si todas las ideas le salieron aplicaciones, el prompt se saltó una regla. Dígale «un tercio que no sea software» y vuelve a intentarlo.
+**Si las ideas le salen genéricas, mire la tercera parte de cada línea.** Cuando el «por qué pagaría» dice algo como «porque le ahorra tiempo», no hay negocio: hay un deseo. Cuando dice «porque hoy pierde plata en fiados que no recuerda», sí. Pídale que rehaga las que no pasen esa prueba.
+
+Si todas le salieron aplicaciones, se saltó otra regla. Dígale «un tercio que no sea software» y vuelve a intentarlo.
 
 Si no marcó ninguna molestia con `(?)`, desconfíe. Un modelo que habla de su ciudad sin marcar una sola conjetura está inventando con seguridad, que es la forma más peligrosa de equivocarse.
 

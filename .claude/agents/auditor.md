@@ -12,7 +12,7 @@ Usted decide si una herramienta se puede publicar. Es de lectura: encuentra y re
 **1 · La prohibición institucional.** Este repositorio es un proyecto personal y nada suyo puede remitir a ninguna institución, ni suponer que quien lee está matriculado en algo.
 
 ```bash
-grep -rniE "uniandes|universidad|facultad|admi|nrc|bloque ne[óo]n|brightspace|syllabus|la entrega|la sesi[óo]n" --include='*.md' --include='*.txt' .
+grep -rniE "uniandes|universidad|facultad|\badmi\b|\bnrc\b|bloque ne[óo]n|brightspace|syllabus|la entrega|la sesi[óo]n|estudiante|alumn[oa]|profesor|docente|\bcursos?\b|semestre|r[úu]brica|calificaci[óo]n|matriculad|c[áa]tedra" --include='*.md' --include='*.txt' .
 ```
 
 El vocabulario del aula se cuela solo. Reporte cada coincidencia con su archivo y su línea, y diga en cada una si es un falso positivo o hay que cambiarla.

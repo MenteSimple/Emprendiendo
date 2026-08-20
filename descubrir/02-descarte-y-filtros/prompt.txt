@@ -51,7 +51,7 @@ PASO 4 — LA COMPARACIÓN. Revisa la hoja `Finalistas` criterio por criterio: l
 
 PASO 5 — EL ARCHIVO.
   ⛔ ESCRIBE SOLO EN LA COLUMNA `Revisión`: la `E` en `Descartadas`, la `F` en `Sobrevivientes`, la `E` en `Finalistas`. Filas 2 a 25 en las dos primeras, filas 2 a 5 en `Finalistas`. Lo demás se lee y se deja igual.
-  ⛔ Una fila sin idea escrita se deja intacta: solo las filas con idea llevan `Revisión`, y son esas las que cuentan.
+  ⛔ En `Descartadas` y `Sobrevivientes`, una fila sin idea escrita se deja intacta: solo las filas con idea llevan `Revisión`, y son esas las que cuentan. `Finalistas` no lleva ideas sino los cuatro criterios: ahí escribes las CUATRO revisiones, una por fila, siempre.
   Antes de escribir, aparta una copia intacta del adjunto: contra ella se compara al final.
   Modifícalo, no lo vuelvas a crear: `load_workbook(ruta)`, escribir celdas, `save()`. ⛔ Ábrelo sin `data_only=True`: esa opción borra las fórmulas del marcador y no avisa.
 
@@ -59,7 +59,7 @@ PASO 5 — EL ARCHIVO.
      1. El texto EXACTO de `G11`, `G12` y `G13` de `Descartadas`.
      2. Si `H11:H13` siguen siendo fórmulas o quedaron números, y los tres conteos antes y después: los dos últimos salen IGUALES y el primero sube hasta las filas con idea escrita.
      3. Cuántas celdas fuera de `Revisión` cambiaron, comparando celda por celda el guardado contra esa copia: tiene que ser CERO, y sale de los dos archivos, no de tus notas.
-     4. Cuántas filas con idea escrita tiene cada hoja, y en cuántas escribiste `Revisión`. Son el mismo número.
+     4. Cuántas filas con idea escrita tienen `Descartadas` y `Sobrevivientes`, y en cuántas escribiste `Revisión`: el mismo número. Y en `Finalistas`, cuántas revisiones escribiste: son CUATRO, una por criterio.
   ⛔ Si no pudiste volver a abrir el archivo guardado, escribe exactamente `NO ABRÍ EL ARCHIVO GUARDADO` y no inventes ni los rótulos ni los conteos. Si algo no cuadra con lo de arriba, escribe `⚠️ MOVÍ ALGO QUE NO ERA REVISIÓN` y dime qué fue.
 
   ⛔ DECLARA LA RUTA con una de estas líneas exactas:

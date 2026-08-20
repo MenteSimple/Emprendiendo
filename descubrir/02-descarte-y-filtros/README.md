@@ -20,17 +20,18 @@ Eres un revisor externo del filtro que ya hizo mi equipo. No filtras tú, no eli
 PASO 1 — EL INSUMO. Necesitas tres cosas antes de empezar:
   (a) La plantilla adjunta, con sus tres hojas: `Descartadas`, `Sobrevivientes`, `Finalistas`.
   (b) Que la hoja `Descartadas` tenga escrito el MOTIVO de cada descarte, no solo la idea.
-  (c) Nuestro plazo de trabajo, y para cuándo necesitamos haber hablado con alguien. Pregúntamelo si no te lo di.
+  (c) Nuestro plazo de trabajo, y para cuándo necesitamos haber hablado con alguien.
 
-  ⛔ SI NO ME ADJUNTASTE ARCHIVO, no lo descargues ni lo fabriques. Detente y dime exactamente esto:
-     «Necesito la plantilla de descarte llena y adjunta a este chat. Adjúntala y dime *listo*. Si prefieres, pega aquí mismo las ideas descartadas con su motivo, las sobrevivientes y los tres finalistas, y trabajo con eso.»
+  ⛔ SI TE FALTA (a) O (c), pídeme de una vez TODO lo que falte, en una sola respuesta, y detente. Si no hay archivo adjunto, no lo descargues ni lo fabriques. Usa estas frases, solo las que apliquen:
+     «Necesito la plantilla de descarte llena y adjunta a este chat. Adjúntala y dime *listo*.»
+     «Dime también hasta cuándo tenemos, y para cuándo necesitamos haber hablado con alguien.»
      Espera mi respuesta. No sigas.
 
   ⛔ SI HAY IDEAS DESCARTADAS SIN MOTIVO ESCRITO, dímelo con su número y detente:
      «Las ideas N, N y N no tienen motivo. El filtro es el razonamiento, no la lista: sin el motivo no puedo revisar nada. Escríbelos y dime *listo*.»
      Espera mi respuesta. No sigas.
 
-  Esas son las DOS ÚNICAS pausas de todo el flujo. Del Paso 2 al Paso 6 vas de corrido, en una sola respuesta, sin preguntarme nada más.
+  Esas son las DOS ÚNICAS pausas de todo el flujo, y la primera junta en una sola pregunta todo lo que falte. Del Paso 2 al Paso 6 vas de corrido, en una sola respuesta, sin preguntarme nada más.
 
 PASO 2 — DESCARTES MAL MOTIVADOS. Revisa la hoja `Descartadas`.
 
@@ -74,7 +75,7 @@ PASO 5 — EL ARCHIVO.
 
   ⛔ DECLARA LA RUTA con una de estas líneas exactas:
      `Ruta 1 · escribí las revisiones en la plantilla que me adjuntaste`
-     `Ruta 2 · no había plantilla, entrego las revisiones en texto`
+     `Ruta 2 · no puedo ejecutar código, entrego las revisiones en texto`
      `⚠️ fabriqué un archivo nuevo, no es la plantilla original`
 
 PASO 6 — CIERRE. Fuera de todo lo anterior, tres cosas y nada más:
@@ -99,7 +100,11 @@ La columna `Revisión` llena en las tres hojas, y **nada más tocado**. Si le ca
 
 ⚠️ **La verificación tiene truco.** Las celdas `F11`, `F12` y `F13` de `Descartadas` dicen **«Descartes revisados», «Motivos escritos» y «Sin motivo»**, y esos rótulos no aparecen en el prompt. Si su herramienta responde otra cosa, no abrió el archivo y lo demás que diga no vale.
 
-⚠️ **Los modelos ligeros no ejecutan código** y no van a devolver el archivo por más que lo afirmen. Si su herramienta deja elegir modelo, escoja el completo.
+⚠️ **Los modelos ligeros no ejecutan código** y no van a devolver el archivo por más que lo afirmen. Si su herramienta deja elegir modelo, escoja el completo. Esa es la única desviación prevista: `Ruta 2` es «no puedo ejecutar código», con la plantilla adjunta de todos modos.
+
+⚠️ **Los contadores van a verse vacíos, y no es un fallo del modelo.** Al guardar con `openpyxl` las fórmulas `=COUNTA(...)` de `G11:G13` quedan sin su último valor calculado, así que esas celdas aparecen en blanco hasta que Excel las recalcule al abrir. Lo que hay que mirar es que sigan siendo fórmulas y no números escritos a mano.
+
+**Por qué no hay una vía de «péguelas en el chat».** Sería cómodo ofrecerla y no está probada: la regla 5 del repositorio nació de ofrecer una segunda vía que no funcionaba, y hasta que alguien la corra de verdad, esta herramienta pide el archivo y punto.
 
 ## Lo que más suele aparecer
 

@@ -126,9 +126,12 @@ PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primer
 
      ⛔ ORIGEN = X EN LAS 34, SIN EXCEPCIÓN. La plantilla explica que `P` es para lo que observó el estudiante y `S` para lo que él sacó de SCAMPER. Esas dos letras son para SU trabajo, no para el tuyo: todo lo que generaste tú es `X`, incluidas las de SCAMPER, porque las produjiste tú y no él. Marcarlas `P` o `S` le atribuye al estudiante ideas que no son suyas y arruina lo único que ese registro sirve para saber: cuáles ideas sobrevivieron al filtro, si las de él o las de la máquina. Ante la duda, `X`.
 
-     ⛔ AL TERMINAR, VERIFICA DE VERDAD. Después de guardar, vuelve a ABRIR el archivo guardado y LEE tres cosas: que las fórmulas `=COUNTA(...)` sigan siendo fórmulas, el valor de los tres contadores, y qué dice la columna `Origen`. Dime lo que leíste, con esta forma:
-        `Leído del archivo · contadores 15 / 34 / 14 · fórmulas intactas · Origen: 34 X`
-     No me digas lo que *esperabas* que quedara: si no volviste a abrir el archivo, dilo. Un número esperado no es una verificación.
+     ⛔ PRUEBA DE QUE ABRISTE EL ARCHIVO. No me sirve que repitas de vuelta una frase que yo te di: eso lo puede escribir cualquiera sin tocar nada. Después de guardar, vuelve a ABRIR el archivo guardado y dime cuatro cosas:
+        1. El texto EXACTO de las celdas F2, F3 y F4 de la hoja `Ideas`. Son tres rótulos cortos que NO están escritos en ninguna parte de este prompt: si no abriste el archivo, no tienes cómo saberlos.
+        2. El valor de los tres contadores.
+        3. Si las `=COUNTA(...)` siguen siendo fórmulas o quedaron convertidas en números.
+        4. Cuántas de las 34 filas de la columna `Origen` dicen X.
+     ⛔ Si no pudiste abrir el archivo, escribe exactamente `NO ABRÍ EL ARCHIVO` y no inventes las celdas. Inventarlas es mucho peor que admitirlo: el estudiante entrega un archivo roto creyendo que está verificado.
 
   RUTA 2 — CSV. Si te dije «sigue sin archivo», o si tienes la plantilla pero no puedes devolverme un `.xlsx`, entrégame tres `.csv` en UTF-8:
      `molestias.csv` — una columna: Molestia
@@ -170,7 +173,11 @@ Tres bloques de código rotulados —**Molestias** 15 líneas, **Ideas** 20 lín
 
 ⚠️ **El fallo más peligroso: que le entreguen un archivo fabricado.** Si el modelo no logra abrir su plantilla, algunos arman un `.xlsx` nuevo con las tres hojas y el mismo contenido. Se ve bien y no lo es: **no trae los contadores, ni las listas desplegables de `Origen` y `Letra`, ni el panel «Cómo se llena»**. Pasó en una prueba real con Copilot, que lo dijo sin que nadie preguntara: *«no pude acceder a la plantilla original del enlace… generé un archivo Excel nuevo»*. Ábralo y mire a la derecha de la hoja `Ideas`: si no están «Ideas escritas», «Meta del taller» y «★ marcadas», ese archivo no es la plantilla. Vuelva a empezar **adjuntando** el archivo.
 
-⚠️ **Exija la lectura, no la promesa.** La última línea debe empezar con «Leído del archivo». En una prueba real Copilot escribió «Contadores *esperados*: 15 · 34 · 14» — declaró lo que creía haber puesto, sin volver a abrirlo. Claude sí lo abrió y leyó. Si su herramienta dice «esperados», pídale que abra el archivo guardado y lea.
+⚠️ **La verificación tiene truco, a propósito.** El prompt le pide el texto de tres celdas —`F2`, `F3` y `F4` de la hoja `Ideas`— cuyos rótulos no aparecen en ninguna parte del prompt. Si su herramienta responde algo distinto de **«Ideas escritas», «Meta del taller» y «★ marcadas»**, no abrió el archivo y lo demás que diga no vale.
+
+Hizo falta ponerlo así. En una prueba real, Gemini 3.5 Flash-Lite —que no ejecuta código y no generó ningún archivo— escribió igual la línea de verificación completa, copiada del propio prompt. Una plantilla de verificación es un formulario en blanco: se rellena sin hacer nada. Un dato que no está en el prompt, no.
+
+⚠️ **Y el modelo importa.** Las versiones ligeras (Flash-Lite y similares) no ejecutan código: no van a devolver el archivo por más que lo digan. Si su herramienta ofrece elegir modelo, escoja el completo.
 
 ⚠️ **La columna `Origen` tiene que decir `X` en las 34 filas.** Si aparece alguna `P` o alguna `S`, el modelo le está atribuyendo ideas que no son suyas.
 

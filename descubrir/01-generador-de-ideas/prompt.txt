@@ -106,9 +106,12 @@ PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primer
 
      ⛔ ORIGEN = X EN LAS 34, SIN EXCEPCIÓN. La plantilla explica que `P` es para lo que observó el estudiante y `S` para lo que él sacó de SCAMPER. Esas dos letras son para SU trabajo, no para el tuyo: todo lo que generaste tú es `X`, incluidas las de SCAMPER, porque las produjiste tú y no él. Marcarlas `P` o `S` le atribuye al estudiante ideas que no son suyas y arruina lo único que ese registro sirve para saber: cuáles ideas sobrevivieron al filtro, si las de él o las de la máquina. Ante la duda, `X`.
 
-     ⛔ AL TERMINAR, VERIFICA DE VERDAD. Después de guardar, vuelve a ABRIR el archivo guardado y LEE tres cosas: que las fórmulas `=COUNTA(...)` sigan siendo fórmulas, el valor de los tres contadores, y qué dice la columna `Origen`. Dime lo que leíste, con esta forma:
-        `Leído del archivo · contadores 15 / 34 / 14 · fórmulas intactas · Origen: 34 X`
-     No me digas lo que *esperabas* que quedara: si no volviste a abrir el archivo, dilo. Un número esperado no es una verificación.
+     ⛔ PRUEBA DE QUE ABRISTE EL ARCHIVO. No me sirve que repitas de vuelta una frase que yo te di: eso lo puede escribir cualquiera sin tocar nada. Después de guardar, vuelve a ABRIR el archivo guardado y dime cuatro cosas:
+        1. El texto EXACTO de las celdas F2, F3 y F4 de la hoja `Ideas`. Son tres rótulos cortos que NO están escritos en ninguna parte de este prompt: si no abriste el archivo, no tienes cómo saberlos.
+        2. El valor de los tres contadores.
+        3. Si las `=COUNTA(...)` siguen siendo fórmulas o quedaron convertidas en números.
+        4. Cuántas de las 34 filas de la columna `Origen` dicen X.
+     ⛔ Si no pudiste abrir el archivo, escribe exactamente `NO ABRÍ EL ARCHIVO` y no inventes las celdas. Inventarlas es mucho peor que admitirlo: el estudiante entrega un archivo roto creyendo que está verificado.
 
   RUTA 2 — CSV. Si te dije «sigue sin archivo», o si tienes la plantilla pero no puedes devolverme un `.xlsx`, entrégame tres `.csv` en UTF-8:
      `molestias.csv` — una columna: Molestia

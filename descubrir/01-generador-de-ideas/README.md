@@ -130,28 +130,28 @@ PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primer
         · la fila 1 de cada hoja, con sus encabezados y su formato;
         · los contadores `=COUNTA(...)` que hay a la derecha en las tres hojas — son fórmulas, no las reemplaces por números;
         · las listas desplegables de la columna `Origen` y de la columna `Letra`;
-        · la celda `Nombre completo` de la hoja `Ideas`, que la llena el estudiante y va vacía.
+        · la celda `Nombre completo` de la hoja `Ideas`, que la llena quien te escribe y va vacía.
      Escribe desde la fila 2, así:
         `Molestias` — las 15, **conservando las marcas (?)** tal como las escribiste. Son la señal de qué hay que ir a verificar y no se pueden perder al pasar al archivo.
         `SCAMPER` — las 14, junto a la letra que ya está puesta en la columna A.
         `Ideas` — **34 filas**: las 20 oportunidades en las filas 2 a 21, y las 14 de SCAMPER en las filas 22 a 35. La plantilla lo pide así en su propio panel «Cómo se llena», y su meta es 34.
-        `★` — vacía siempre. Esa la marca el estudiante.
+        `★` — vacía siempre. Esa la marca quien te escribe.
 
-     ⛔ ORIGEN = X EN LAS 34, SIN EXCEPCIÓN. La plantilla explica que `P` es para lo que observó el estudiante y `S` para lo que él sacó de SCAMPER. Esas dos letras son para SU trabajo, no para el tuyo: todo lo que generaste tú es `X`, incluidas las de SCAMPER, porque las produjiste tú y no él. Marcarlas `P` o `S` le atribuye al estudiante ideas que no son suyas y arruina lo único que ese registro sirve para saber: cuáles ideas sobrevivieron al filtro, si las de él o las de la máquina. Ante la duda, `X`.
+     ⛔ ORIGEN = X EN LAS 34, SIN EXCEPCIÓN. La plantilla explica que `P` es para lo que observó quien te escribe y `S` para lo que sacó de SCAMPER. Esas dos letras son para SU trabajo, no para el tuyo: todo lo que generaste tú es `X`, incluidas las de SCAMPER, porque las produjiste tú y no esa persona. Marcarlas `P` o `S` le atribuye ideas que no son suyas y arruina lo único que ese registro sirve para saber: cuáles ideas sobrevivieron al filtro, si las propias o las de la máquina. Ante la duda, `X`.
 
      ⛔ PRUEBA DE QUE ABRISTE EL ARCHIVO. No me sirve que repitas de vuelta una frase que yo te di: eso lo puede escribir cualquiera sin tocar nada. Después de guardar, vuelve a ABRIR el archivo guardado y dime cuatro cosas:
         1. El texto EXACTO de las celdas F2, F3 y F4 de la hoja `Ideas`. Son tres rótulos cortos que NO están escritos en ninguna parte de este prompt: si no abriste el archivo, no tienes cómo saberlos.
         2. El valor de los tres contadores.
         3. Si las `=COUNTA(...)` siguen siendo fórmulas o quedaron convertidas en números.
         4. Cuántas de las 34 filas de la columna `Origen` dicen X.
-     ⛔ Si no pudiste abrir el archivo, escribe exactamente `NO ABRÍ EL ARCHIVO` y no inventes las celdas. Inventarlas es mucho peor que admitirlo: el estudiante entrega un archivo roto creyendo que está verificado.
+     ⛔ Si no pudiste abrir el archivo, escribe exactamente `NO ABRÍ EL ARCHIVO` y no inventes las celdas. Inventarlas es mucho peor que admitirlo: quien te escribe entrega un archivo roto creyendo que está verificado.
 
   RUTA 2 — CSV. Si te dije «sigue sin archivo», o si tienes la plantilla pero no puedes devolverme un `.xlsx`, entrégame tres `.csv` en UTF-8:
      `molestias.csv` — una columna: Molestia
      `ideas.csv` — cuatro columnas: #, Idea, Origen, ★ — 34 filas (las 20 y las 14 de SCAMPER), Origen X en todas
      `scamper.csv` — dos columnas: Letra, Idea nueva (con la letra escrita, en el orden S,S,C,C,A,A,M,M,P,P,E,E,R,R)
 
-  RUTA 3 — SOLO TEXTO. Si no puedes generar ningún archivo, dilo en una sola línea: "no puedo generar archivos". Los bloques bastan y el estudiante los pega a mano.
+  RUTA 3 — SOLO TEXTO. Si no puedes generar ningún archivo, dilo en una sola línea: "no puedo generar archivos". Los bloques bastan y quien te escribe los pega a mano.
 
   Los bloques de código van SIEMPRE, cualquiera sea la ruta. Son el respaldo si el archivo llega mal.
 
@@ -196,7 +196,7 @@ Hizo falta ponerlo así. En una prueba real, Gemini 3.5 Flash-Lite —que no eje
 
 ⚠️ **Si se frena y le pregunta algo a mitad de camino, es un defecto conocido.** Debe ir del Paso 2 al 5 de corrido. La única pausa legítima es cuando no adjuntó la plantilla. Si le pregunta cuáles tres ideas escoger, respóndale «escoge tú» y siga — pasó en una prueba real y por eso el prompt ahora se lo prohíbe.
 
-⚠️ **Mire la línea de verificación de SCAMPER.** Debe decir `S=2 C=2 A=2 M=2 P=2 E=2 R=2`. Si algún número no da 2, la lista quedó corrida y al pegarla en la plantilla cada idea va a caer junto a la letra equivocada. Pídale que la rehaga: en las pruebas falló una de cada dos veces, y es el único error de esta herramienta que el estudiante no puede detectar solo.
+⚠️ **Mire la línea de verificación de SCAMPER.** Debe decir `S=2 C=2 A=2 M=2 P=2 E=2 R=2`. Si algún número no da 2, la lista quedó corrida y al pegarla en la plantilla cada idea va a caer junto a la letra equivocada. Pídale que la rehaga: en las pruebas falló una de cada dos veces, y es el único error de esta herramienta que usted no puede detectar solo.
 
 **Si las ideas le salen genéricas, mire la tercera parte de cada línea.** Cuando el «por qué pagaría» dice algo como «porque le ahorra tiempo», no hay negocio: hay un deseo. Cuando dice «porque hoy pierde plata en fiados que no recuerda», sí. Pídale que rehaga las que no pasen esa prueba.
 

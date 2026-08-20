@@ -32,14 +32,14 @@ PASO 2 — DESCARTES MAL MOTIVADOS. Revisa la hoja `Descartadas`.
 
   Para cada descarte mal motivado, escribe en `Revisión` qué tiene de malo ese motivo y qué habría que preguntarse para decidirlo bien. Máximo dos frases. No decidas tú si vuelve a la mesa.
 
-  A los descartes bien motivados, escríbeles `ok` en `Revisión` y nada más.
+  A los descartes bien motivados, escríbeles `ok` en `Revisión` y nada más. Idea escrita y motivo en blanco: `sin motivo`. ⛔ `ok` dice «bien motivado» y ahí sería falso.
 
 PASO 3 — SOBREVIVIENTES QUE NO PASAN. Revisa la hoja `Sobrevivientes` contra los tres cortes, que son binarios:
      1. ¿Es un problema, o es una solución? Se cae si ya dice lo que se va a construir. Prueba: reescríbela como problema de alguien; si no se puede, no había problema.
      2. ¿Con quién podemos hablar antes de la fecha que te di, y quién de nosotros lo consigue? Se cae si el contacto no es un nombre o un lugar concreto, o si nadie de mi equipo se comprometió a conseguirlo. Sé especialmente duro con este.
      3. ¿Cabe en nuestro plazo? Se cae si necesita una licencia, una obra o un permiso que no llega a tiempo.
 
-  En `Revisión` de cada fila, una de tres: `ok` · `no pasa el corte N` y por qué · `ok con reparo` y cuál. Máximo dos frases.
+  En `Revisión` de cada fila, una de tres: `ok` · `no pasa el corte N` y por qué · `ok con reparo` y cuál. Máximo dos frases. ⛔ Lo que no sea `ok` a secas cita entre comillas la celda que lo tumba: sin cita no se distingue de un `ok` escrito sin leer.
 
   Un reparo es una contradicción entre hojas, y buscarlas es parte del trabajo: un contacto con nombre propio acá no puede convivir con un «no conocemos a nadie» en `Finalistas`.
 

@@ -6,9 +6,15 @@
 
 **Cuándo se usa:** al final de su propia sesión de generación, para estirar la lista. Genere primero por su cuenta: producir alternativas sin editarse es un músculo, y esta suele ser la única sesión dedicada a ejercitarlo. Después traiga la máquina y llévese el doble.
 
-**Cómo llega a la plantilla, por dos vías.** Si su herramienta puede generar archivos, le entrega tres `.csv` listos para abrir en Excel. Si no puede —y varias no pueden—, la salida viene igual en tres bloques de líneas sueltas: se selecciona el bloque, se copia y se pega en la primera celda de la columna, y Excel reparte una línea por fila. Las columnas `#`, `Origen` y `★` ya están en la plantilla.
+**Cómo llega a la plantilla.** La mejor ruta, y la que conviene intentar primero: **adjunte la plantilla al chat antes de pegar el prompt.** Si su herramienta acepta archivos y los devuelve —ChatGPT y Claude lo hacen; Gemini depende de la versión—, le devuelve la plantilla llena y eso ya es el entregable, sin copiar ni pegar nada.
 
-⚠️ **Que las ideas salgan en pantalla y no como archivo no es una falla del prompt:** hay modelos que sencillamente no generan archivos. Por eso el prompt pide el archivo *y* los bloques, y le hace decir cuál de los dos puede.
+Si no, el prompt baja solo a la siguiente ruta: tres `.csv` listos para abrir. Y si tampoco, quedan los tres bloques de líneas sueltas, que se pegan en la primera celda de cada columna y Excel reparte una línea por fila.
+
+Los bloques salen siempre, en cualquiera de las tres rutas. Son el respaldo si el archivo llega mal.
+
+⚠️ **Si le devuelve la plantilla llena, revísela antes de entregarla.** Un modelo que reescribe un `.xlsx` en vez de editarlo se lleva por delante los contadores, las listas desplegables de `Origen` y de `Letra`, y el formato de la fila 1. Tres comprobaciones de diez segundos: que los contadores muestren 15, 20 y 14; que al hacer clic en una celda de `Origen` siga apareciendo la lista; y que la celda de `Nombre completo` siga ahí. Si algo se rompió, use los bloques sobre su plantilla original.
+
+⚠️ **Que las ideas salgan solo en pantalla no es falla del prompt:** hay modelos que no generan archivos. Por eso se le pide que diga cuál de las tres rutas puede.
 
 **Si no sabe por dónde empezar**, arranque igual. La herramienta le ofrece los cinco sectores del curso y, si con eso no basta, le pregunta por los cuatro sitios donde buscar oportunidad —lo que cambió · industrias rotas · lo que usted sufre · lo que nadie quiere tocar— y de ahí le propone segmentos hasta que quede uno solo.
 
@@ -99,11 +105,25 @@ PASO 4 — SCAMPER. Escoge 3 de las oportunidades anteriores, bien distintas ent
 
   Inmediatamente después del bloque, FUERA del código, escribe una sola línea de verificación con el conteo real de lo que acabas de entregar, así: `Verificación · S=2 C=2 A=2 M=2 P=2 E=2 R=2`. Si algún número no da 2, rehaz el bloque antes de seguir.
 
-PASO 4B — ARCHIVOS. Si tu herramienta puede generar archivos para descargar, entrégame tres `.csv` con codificación UTF-8, además de los bloques:
-  `molestias.csv` — una columna: Molestia
-  `ideas.csv` — cuatro columnas: #, Idea, Origen, ★  (numera desde 1, pon X en Origen, deja ★ vacía)
-  `scamper.csv` — dos columnas: Letra, Idea nueva  (con la letra escrita, en el orden S,S,C,C,A,A,M,M,P,P,E,E,R,R)
-Si no puedes generar archivos, dime en una sola línea "no puedo generar archivos" y ya: los bloques bastan.
+PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primera que puedas.
+
+  RUTA 1 — LLENAR MI PLANTILLA. Si te adjunté un archivo `.xlsx` y puedes devolvérmelo modificado, llénalo y devuélvemelo. Tiene tres hojas —`Molestias`, `Ideas`, `SCAMPER`— con los encabezados ya puestos.
+     ⛔ Modifica el archivo, no lo vuelvas a crear. Tiene que sobrevivir todo esto:
+        · la fila 1 de cada hoja, con sus encabezados y su formato;
+        · los contadores `=COUNTA(...)` que hay a la derecha en las tres hojas — son fórmulas, no las reemplaces por números;
+        · las listas desplegables de la columna `Origen` y de la columna `Letra`;
+        · la celda `Nombre completo` de la hoja `Ideas`, que la llena el estudiante y va vacía.
+     Escribe desde la fila 2. En `Ideas`: `#` de 1 a 20, `Idea` con sus tres partes, `Origen` con X, y `★` vacía. En `SCAMPER` respeta las letras que ya están puestas.
+     Al terminar dime en una línea qué contadores quedaron: Molestias, Ideas y SCAMPER.
+
+  RUTA 2 — CSV. Si no puedes devolver el `.xlsx` pero sí generar archivos, entrégame tres `.csv` en UTF-8:
+     `molestias.csv` — una columna: Molestia
+     `ideas.csv` — cuatro columnas: #, Idea, Origen, ★
+     `scamper.csv` — dos columnas: Letra, Idea nueva (con la letra escrita, en el orden S,S,C,C,A,A,M,M,P,P,E,E,R,R)
+
+  RUTA 3 — SOLO TEXTO. Si no puedes generar ni devolver archivos, dilo en una sola línea: "no puedo generar archivos". Los bloques bastan.
+
+  Los bloques de código van SIEMPRE, cualquiera sea la ruta. Son el respaldo si el archivo llega mal.
 
 PASO 5 — CIERRE. Fuera de los bloques de código, termina con esto y nada más:
   - Dos territorios cercanos que NO exploramos y donde valdría la pena que yo genere por mi cuenta.

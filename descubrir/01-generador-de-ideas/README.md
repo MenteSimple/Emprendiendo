@@ -6,11 +6,11 @@
 
 **Cuándo se usa:** al final de su propia sesión de generación, para estirar la lista. Genere primero por su cuenta: producir alternativas sin editarse es un músculo, y esta suele ser la única sesión dedicada a ejercitarlo. Después traiga la máquina y llévese el doble.
 
-**La plantilla está en esta misma carpeta:** [`plantilla-ideas.xlsx`](plantilla-ideas.xlsx). Tres hojas —`Molestias`, `Ideas`, `SCAMPER`— con los encabezados puestos, listas desplegables y un contador que le dice cuántas lleva. Descárguela antes de empezar.
-
 **El prompt suelto**, por si prefiere copiarlo sin leer nada: [`prompt.txt`](prompt.txt). Se genera del bloque de más abajo, así que las dos versiones dicen siempre lo mismo.
 
-**Cómo llega a la plantilla.** La mejor ruta, y la que conviene intentar primero: **adjunte la plantilla al chat antes de pegar el prompt.** Si su herramienta acepta archivos y los devuelve —ChatGPT y Claude lo hacen; Gemini depende de la versión—, le devuelve la plantilla llena y eso ya es el entregable, sin copiar ni pegar nada.
+**La plantilla está en esta misma carpeta:** [`plantilla-ideas.xlsx`](plantilla-ideas.xlsx), y también se baja directo desde [este enlace](https://raw.githubusercontent.com/MenteSimple/herramientas-ia-emprendimiento/main/descubrir/01-generador-de-ideas/plantilla-ideas.xlsx).
+
+**Cómo llega a la plantilla.** La mejor ruta, y la que conviene intentar primero: **adjunte la plantilla al chat antes de pegar el prompt.** Es la única que no depende de que su herramienta tenga acceso a internet — en Copilot dentro de una organización, ese acceso lo decide la política de la empresa o la universidad, no usted. El prompt trae el enlace de descarga como segunda vía por si su herramienta sí puede bajarlo sola. Si su herramienta acepta archivos y los devuelve —ChatGPT y Claude lo hacen; Gemini depende de la versión—, le devuelve la plantilla llena y eso ya es el entregable, sin copiar ni pegar nada.
 
 Si no, el prompt baja solo a la siguiente ruta: tres `.csv` listos para abrir. Y si tampoco, quedan los tres bloques de líneas sueltas, que se pegan en la primera celda de cada columna y Excel reparte una línea por fila.
 
@@ -115,7 +115,11 @@ PASO 4 — SCAMPER. Escoge 3 de las oportunidades anteriores, bien distintas ent
 
 PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primera que puedas.
 
-  RUTA 1 — LLENAR MI PLANTILLA. Si te adjunté un archivo `.xlsx` y puedes devolvérmelo modificado, llénalo y devuélvemelo. Tiene tres hojas —`Molestias`, `Ideas`, `SCAMPER`— con los encabezados ya puestos.
+  RUTA 1 — LLENAR LA PLANTILLA. Tiene tres hojas —`Molestias`, `Ideas`, `SCAMPER`— con los encabezados ya puestos. Consíguela por una de estas dos vías, en este orden:
+     (a) Si te adjunté el archivo `.xlsx`, usa ese.
+     (b) Si no te lo adjunté pero puedes descargar de internet, bájala de:
+        https://raw.githubusercontent.com/MenteSimple/herramientas-ia-emprendimiento/main/descubrir/01-generador-de-ideas/plantilla-ideas.xlsx
+     Si no tienes ninguna de las dos, pasa a la Ruta 2. Llénala y devuélvemela.
      ⛔ Modifica el archivo, no lo vuelvas a crear. Si puedes ejecutar código, ábrelo y edítalo: en Python, `openpyxl` sirve —`load_workbook(ruta)`, escribir celdas, `save()`—. Lo que NO funciona es armar un `.xlsx` nuevo y copiarle los datos: así se pierde lo de abajo. Si no puedes ejecutar código, no intentes fabricar el archivo a mano: pasa a la Ruta 2.
      Tiene que sobrevivir todo esto:
         · la fila 1 de cada hoja, con sus encabezados y su formato;

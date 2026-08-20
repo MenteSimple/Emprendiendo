@@ -59,6 +59,10 @@ Es una precaución con motivo: un prompt escrito en dos archivos se desincroniza
 
 Proponer · Modelar · Validar — en construcción.
 
+## Si quiere escribir la suya
+
+Las diez reglas con las que están escritas estas herramientas —y el fallo del que salió cada una— están en **[cómo se escriben estas herramientas](COMO-ESCRIBIR-ESTAS-HERRAMIENTAS.md)**. Ninguna es teórica: cada una es una corrida que salió mal contra Copilot, Gemini o Claude, con lo que dijo el modelo. Sirven para cualquier prompt que tenga que producir algo verificable, no solo para estos.
+
 ## Lo que ninguna puede hacer
 
 Ninguna sabe nada de su mercado, sus clientes ni su ciudad. Todo lo que digan sobre el mundo real es una conjetura plausible, y varias van a ser falsas con seguridad y con buen tono. **Sirven para producir alternativas y para revisar razonamientos, no para conseguir hechos.** Los hechos se consiguen hablando con gente, y eso no se delega.

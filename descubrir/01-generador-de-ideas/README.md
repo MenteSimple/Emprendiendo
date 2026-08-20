@@ -8,21 +8,13 @@
 
 **El prompt suelto**, por si prefiere copiarlo sin leer nada: [`prompt.txt`](prompt.txt). Se genera del bloque de más abajo, así que las dos versiones dicen siempre lo mismo.
 
-**La plantilla está en esta misma carpeta:** [`plantilla-ideas.xlsx`](plantilla-ideas.xlsx), y también se baja directo desde [este enlace](https://raw.githubusercontent.com/MenteSimple/Emprendiendo/main/descubrir/01-generador-de-ideas/plantilla-ideas.xlsx).
+**La plantilla está en esta misma carpeta:** [`plantilla-ideas.xlsx`](plantilla-ideas.xlsx) · [descarga directa](https://raw.githubusercontent.com/MenteSimple/Emprendiendo/main/descubrir/01-generador-de-ideas/plantilla-ideas.xlsx).
 
-**Cómo llega a la plantilla.** La mejor ruta, y la que conviene intentar primero: **adjunte la plantilla al chat antes de pegar el prompt.** Es la única que no depende de que su herramienta tenga acceso a internet — en Copilot dentro de una organización, ese acceso lo decide la política de la empresa o la universidad, no usted. El prompt trae el enlace de descarga como segunda vía por si su herramienta sí puede bajarlo sola. Si su herramienta acepta archivos y los devuelve —ChatGPT y Claude lo hacen; Gemini depende de la versión—, le devuelve la plantilla llena y eso ya es el entregable, sin copiar ni pegar nada.
+> ⛔ **Descárguela y adjúntela al chat ANTES de pegar el prompt.** No es un paso opcional ni una comodidad: adjuntar el archivo es lo que **activa el entorno de ejecución de código** de la herramienta. Sin adjunto, el modelo no tiene con qué abrir un `.xlsx` — ni siquiera puede bajarlo de un enlace—, y va a terminar entregándole texto.
+>
+> Probado el 19 de agosto de 2026: con el archivo adjunto funcionó; sin adjuntarlo, dándole solo el enlace, ninguna de las tres herramientas pudo devolver el archivo. Gemini lo explicó así: *«No tengo la capacidad de encender la herramienta de ejecución de código por mi cuenta»*.
 
-Si no, el prompt baja solo a la siguiente ruta: tres `.csv` listos para abrir. Y si tampoco, quedan los tres bloques de líneas sueltas, que se pegan en la primera celda de cada columna y Excel reparte una línea por fila.
-
-Los bloques salen siempre, en cualquiera de las tres rutas. Son el respaldo si el archivo llega mal.
-
-⚠️ **La comprobación de diez segundos que más importa: la columna `Origen`.** Tiene que decir `X` en las 34 filas. Si aparece alguna `P` o alguna `S`, el modelo le está atribuyendo a usted ideas que no son suyas — pasó en una prueba real con Gemini, que tomó esas letras del instructivo de la plantilla. Corríjalas antes de entregar.
-
-⚠️ **El enlace de descarga puede fallar la primera vez.** En la prueba con Gemini el primer enlace abría una búsqueda en vez de bajar el archivo; bastó pedirlo otra vez. No es señal de que el archivo esté mal.
-
-⚠️ **Si le devuelve la plantilla llena, revísela antes de entregarla.** Un modelo que reescribe un `.xlsx` en vez de editarlo se lleva por delante los contadores, las listas desplegables de `Origen` y de `Letra`, y el formato de la fila 1. Tres comprobaciones de diez segundos: que los contadores muestren 15, 20 y 14; que al hacer clic en una celda de `Origen` siga apareciendo la lista; y que la celda de `Nombre completo` siga ahí. Si algo se rompió, use los bloques sobre su plantilla original.
-
-⚠️ **Que las ideas salgan solo en pantalla no es falla del prompt:** hay modelos que no generan archivos. Por eso se le pide que diga cuál de las tres rutas puede.
+**Si de todos modos no llega el archivo**, el prompt le pide que adjunte la plantilla y espera. Si usted responde «sigue sin archivo», baja a entregarle tres `.csv` o, en último caso, los bloques de texto para pegar a mano.
 
 **Si no sabe por dónde empezar**, arranque igual. La herramienta le ofrece cinco sectores para escoger y, si con eso no basta, le pregunta por los cuatro sitios donde buscar oportunidad —lo que cambió · industrias rotas · lo que usted sufre · lo que nadie quiere tocar— y de ahí le propone segmentos hasta que quede uno solo.
 
@@ -115,11 +107,11 @@ PASO 4 — SCAMPER. Escoge 3 de las oportunidades anteriores, bien distintas ent
 
 PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primera que puedas.
 
-  RUTA 1 — LLENAR LA PLANTILLA. Tiene tres hojas —`Molestias`, `Ideas`, `SCAMPER`— con los encabezados ya puestos. Consíguela por una de estas dos vías, en este orden:
-     (a) Si te adjunté el archivo `.xlsx`, usa ese.
-     (b) Si no te lo adjunté pero puedes descargar de internet, bájala de:
-        https://raw.githubusercontent.com/MenteSimple/Emprendiendo/main/descubrir/01-generador-de-ideas/plantilla-ideas.xlsx
-     Si no tienes ninguna de las dos, pasa a la Ruta 2. Llénala y devuélvemela.
+  RUTA 1 — LLENAR LA PLANTILLA ADJUNTA. Tiene tres hojas —`Molestias`, `Ideas`, `SCAMPER`— con los encabezados ya puestos.
+     ⛔ SI NO TE ADJUNTÉ NINGÚN ARCHIVO, NO INTENTES DESCARGARLO NI FABRICARLO. Detente y dime exactamente esto:
+        «Para devolverte el archivo lleno necesito que adjuntes la plantilla a este chat. Adjúntala y dime *listo*. Si no puedes o no quieres, dime *sigue sin archivo* y te entrego todo en texto.»
+        Después espera mi respuesta. No sigas con el Paso 5 hasta que conteste.
+     Adjuntar el archivo es además lo que suele activar tu entorno de ejecución de código: sin adjunto, en muchas interfaces no tienes con qué abrir un `.xlsx`.
      ⛔ Modifica el archivo, no lo vuelvas a crear. Si puedes ejecutar código, ábrelo y edítalo: en Python, `openpyxl` sirve —`load_workbook(ruta)`, escribir celdas, `save()`—. Lo que NO funciona es armar un `.xlsx` nuevo y copiarle los datos: así se pierde lo de abajo. Si no puedes ejecutar código, no intentes fabricar el archivo a mano: pasa a la Ruta 2.
      Tiene que sobrevivir todo esto:
         · la fila 1 de cada hoja, con sus encabezados y su formato;
@@ -136,12 +128,12 @@ PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primer
 
      Al terminar dime en una línea qué contadores quedaron: Molestias, Ideas y SCAMPER. Deberían dar 15, 34 y 14.
 
-  RUTA 2 — CSV. Si no puedes devolver el `.xlsx` pero sí generar archivos, entrégame tres `.csv` en UTF-8:
+  RUTA 2 — CSV. Si te dije «sigue sin archivo», o si tienes la plantilla pero no puedes devolverme un `.xlsx`, entrégame tres `.csv` en UTF-8:
      `molestias.csv` — una columna: Molestia
      `ideas.csv` — cuatro columnas: #, Idea, Origen, ★ — 34 filas (las 20 y las 14 de SCAMPER), Origen X en todas
      `scamper.csv` — dos columnas: Letra, Idea nueva (con la letra escrita, en el orden S,S,C,C,A,A,M,M,P,P,E,E,R,R)
 
-  RUTA 3 — SOLO TEXTO. Si no puedes generar ni devolver archivos, dilo en una sola línea: "no puedo generar archivos". Los bloques bastan.
+  RUTA 3 — SOLO TEXTO. Si no puedes generar ningún archivo, dilo en una sola línea: "no puedo generar archivos". Los bloques bastan y el estudiante los pega a mano.
 
   Los bloques de código van SIEMPRE, cualquiera sea la ruta. Son el respaldo si el archivo llega mal.
 

@@ -5,7 +5,7 @@ Eres un revisor externo del filtro que ya hizo mi equipo: revisas cómo filtraro
 
 PASO 1 — EL INSUMO. Antes de escribir nada, comprueba tres cosas:
   (a) Que puedas ABRIR la plantilla que te adjunté y leer sus tres hojas: `Descartadas`, `Sobrevivientes`, `Finalistas`. En Python, `openpyxl`.
-  (b) Que las tres traigan trabajo de mi equipo: el MOTIVO escrito de cada descarte, las filas de `Sobrevivientes` y los finalistas comparados.
+  (b) Que las tres traigan trabajo de mi equipo: el MOTIVO escrito de cada descarte, al menos una idea escrita en `Sobrevivientes`, y los finalistas comparados en los cuatro criterios.
   (c) Nuestro plazo, y la fecha para haber hablado con alguien.
 
   ⛔ SI FALTA ALGO, pídelo TODO en un mismo mensaje y detente ahí. Es la ÚNICA pausa: del Paso 2 al Paso 6 vas de corrido, en una sola respuesta, sin preguntarme nada.
@@ -39,7 +39,7 @@ PASO 3 — SOBREVIVIENTES QUE NO PASAN. Revisa la hoja `Sobrevivientes` contra l
      2. ¿Con quién podemos hablar antes de la fecha que te di, y quién de nosotros lo consigue? Se cae si el contacto no es un nombre o un lugar concreto, o si nadie de mi equipo se comprometió a conseguirlo. Sé especialmente duro con este.
      3. ¿Cabe en nuestro plazo? Se cae si necesita una licencia, una obra o un permiso que no llega a tiempo.
 
-  En `Revisión` de cada fila, una de tres: `ok` · `no pasa el corte N` y por qué · `ok con reparo` y cuál. Máximo dos frases. ⛔ Lo que no sea `ok` a secas cita entre comillas la celda que lo tumba: sin cita no se distingue de un `ok` escrito sin leer.
+  En `Revisión` de cada fila, una de tres: `ok` · `no pasa el corte N` y por qué · `ok con reparo` y cuál. Máximo dos frases. ⛔ Lo que no sea `ok` a secas cita entre comillas la celda que lo tumba, con su hoja; el reparo cita LAS DOS que se contradicen. Sin cita no se distingue de un `ok` escrito sin leer.
 
   Un reparo es una contradicción entre hojas, y buscarlas es parte del trabajo: un contacto con nombre propio acá no puede convivir con un «no conocemos a nadie» en `Finalistas`.
 

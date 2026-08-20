@@ -16,6 +16,10 @@ Si no, el prompt baja solo a la siguiente ruta: tres `.csv` listos para abrir. Y
 
 Los bloques salen siempre, en cualquiera de las tres rutas. Son el respaldo si el archivo llega mal.
 
+⚠️ **La comprobación de diez segundos que más importa: la columna `Origen`.** Tiene que decir `X` en las 34 filas. Si aparece alguna `P` o alguna `S`, el modelo le está atribuyendo a usted ideas que no son suyas — pasó en una prueba real con Gemini, que tomó esas letras del instructivo de la plantilla. Corríjalas antes de entregar.
+
+⚠️ **El enlace de descarga puede fallar la primera vez.** En la prueba con Gemini el primer enlace abría una búsqueda en vez de bajar el archivo; bastó pedirlo otra vez. No es señal de que el archivo esté mal.
+
 ⚠️ **Si le devuelve la plantilla llena, revísela antes de entregarla.** Un modelo que reescribe un `.xlsx` en vez de editarlo se lleva por delante los contadores, las listas desplegables de `Origen` y de `Letra`, y el formato de la fila 1. Tres comprobaciones de diez segundos: que los contadores muestren 15, 20 y 14; que al hacer clic en una celda de `Origen` siga apareciendo la lista; y que la celda de `Nombre completo` siga ahí. Si algo se rompió, use los bloques sobre su plantilla original.
 
 ⚠️ **Que las ideas salgan solo en pantalla no es falla del prompt:** hay modelos que no generan archivos. Por eso se le pide que diga cuál de las tres rutas puede.
@@ -117,12 +121,19 @@ PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primer
         · los contadores `=COUNTA(...)` que hay a la derecha en las tres hojas — son fórmulas, no las reemplaces por números;
         · las listas desplegables de la columna `Origen` y de la columna `Letra`;
         · la celda `Nombre completo` de la hoja `Ideas`, que la llena el estudiante y va vacía.
-     Escribe desde la fila 2. En `Ideas`: `#` de 1 a 20, `Idea` con sus tres partes, `Origen` con X, y `★` vacía. En `SCAMPER` respeta las letras que ya están puestas.
-     Al terminar dime en una línea qué contadores quedaron: Molestias, Ideas y SCAMPER.
+     Escribe desde la fila 2, así:
+        `Molestias` — las 15, **conservando las marcas (?)** tal como las escribiste. Son la señal de qué hay que ir a verificar y no se pueden perder al pasar al archivo.
+        `SCAMPER` — las 14, junto a la letra que ya está puesta en la columna A.
+        `Ideas` — **34 filas: las 20 oportunidades y además las 14 de SCAMPER.** La plantilla lo pide así en su propio panel «Cómo se llena», y su meta es 34.
+        `★` — vacía siempre. Esa la marca el estudiante.
+
+     ⛔ ORIGEN = X EN LAS 34, SIN EXCEPCIÓN. La plantilla explica que `P` es para lo que observó el estudiante y `S` para lo que él sacó de SCAMPER. Esas dos letras son para SU trabajo, no para el tuyo: todo lo que generaste tú es `X`, incluidas las de SCAMPER, porque las produjiste tú y no él. Marcarlas `P` o `S` le atribuye al estudiante ideas que no son suyas y arruina lo único que ese registro sirve para saber: cuáles ideas sobrevivieron al filtro, si las de él o las de la máquina. Ante la duda, `X`.
+
+     Al terminar dime en una línea qué contadores quedaron: Molestias, Ideas y SCAMPER. Deberían dar 15, 34 y 14.
 
   RUTA 2 — CSV. Si no puedes devolver el `.xlsx` pero sí generar archivos, entrégame tres `.csv` en UTF-8:
      `molestias.csv` — una columna: Molestia
-     `ideas.csv` — cuatro columnas: #, Idea, Origen, ★
+     `ideas.csv` — cuatro columnas: #, Idea, Origen, ★ — 34 filas (las 20 y las 14 de SCAMPER), Origen X en todas
      `scamper.csv` — dos columnas: Letra, Idea nueva (con la letra escrita, en el orden S,S,C,C,A,A,M,M,P,P,E,E,R,R)
 
   RUTA 3 — SOLO TEXTO. Si no puedes generar ni devolver archivos, dilo en una sola línea: "no puedo generar archivos". Los bloques bastan.

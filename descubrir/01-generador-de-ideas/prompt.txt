@@ -90,7 +90,7 @@ PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primer
   RUTA 1 — LLENAR LA PLANTILLA. Tiene tres hojas —`Molestias`, `Ideas`, `SCAMPER`— con los encabezados ya puestos. Consíguela por una de estas dos vías, en este orden:
      (a) Si te adjunté el archivo `.xlsx`, usa ese.
      (b) Si no te lo adjunté pero puedes descargar de internet, bájala de:
-        https://raw.githubusercontent.com/MenteSimple/herramientas-ia-emprendimiento/main/descubrir/01-generador-de-ideas/plantilla-ideas.xlsx
+        https://raw.githubusercontent.com/MenteSimple/Emprendiendo/main/descubrir/01-generador-de-ideas/plantilla-ideas.xlsx
      Si no tienes ninguna de las dos, pasa a la Ruta 2. Llénala y devuélvemela.
      ⛔ Modifica el archivo, no lo vuelvas a crear. Si puedes ejecutar código, ábrelo y edítalo: en Python, `openpyxl` sirve —`load_workbook(ruta)`, escribir celdas, `save()`—. Lo que NO funciona es armar un `.xlsx` nuevo y copiarle los datos: así se pierde lo de abajo. Si no puedes ejecutar código, no intentes fabricar el archivo a mano: pasa a la Ruta 2.
      Tiene que sobrevivir todo esto:

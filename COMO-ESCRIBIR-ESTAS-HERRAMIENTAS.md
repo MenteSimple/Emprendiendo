@@ -44,6 +44,14 @@ Las reglas que siguen existen contra esos tres comportamientos.
 
 **Las reglas van al prompt; las explicaciones, al documento.** El modelo necesita la regla. El porqué lo lee una persona. Un prompt con ensayos adentro crece sin mejorar y se vuelve imposible de pegar desde un celular.
 
+**Diga hasta cuándo manda cada prohibición.** Un prompt que describe una respuesta gobierna una respuesta, y la presión llega en el turno siguiente: «ahora sí dime cuál», «solo por esta vez». Escriba el alcance temporal con todas las letras. *Origen:* dos corridas de la 03 sostuvieron las prohibiciones después del cierre por inferencia, y las dos avisaron que otro modelo no lo haría — «no tengo instrucción escrita a la que agarrarme». Con el alcance escrito, la corrida siguiente dijo lo contrario: «no tuve que decidir nada, solo escoger cuál de las tres opciones ofrecía».
+
+**Ninguna deixis sobrevive al cambio de silla.** Toda línea que el modelo deba copiar literal a su salida va sin «mío», «tuyo», «yo» ni «ti». Un prompt se escribe en la voz de quien lo pega, y esa voz se invierte cuando la línea aterriza en la pantalla de quien lee. *Origen:* la línea de cierre de la 03 dijo lo contrario de lo que quería decir en dos versiones seguidas. «3 candidatos míos», leída en la voz del prompt, significaba «de la persona» — al revés de lo que marcaba la marca de generado. «Escritos por ti» invirtió el error: el lector entendía que los había escrito él. Solo se arregló quitando la deixis: «generados por la máquina».
+
+**Una negativa sin reemplazo se rellena sola.** Si le prohíbe algo que la persona va a pedir, escriba qué sí puede ofrecer en su lugar, y que sea algo que la herramienta ya sepa hacer. *Origen:* las dos corridas de la 03 que se negaron a rankear ofrecieron algo a cambio por su cuenta, y las dos rozaron la prohibición de sugerir mercados. Lo dijo una de ellas: «si la herramienta quiere una negativa limpia, tiene que decir qué se puede ofrecer a cambio; si no lo dice, el asistente rellena».
+
+**Corregir engorda: mida el tamaño antes de dar la corrección por buena.** Cada defecto que sale de una corrida se arregla escribiendo una regla más, y las reglas suman. *Origen:* arreglar seis defectos de la 03 la infló un 45 %, de 747 a 1.084 palabras, y la dejó más grande que la 02 — en la herramienta cuyo diseño entero es caber en un minuto y pegarse desde un celular. Volvió a 804 cortando repetición, enumeraciones de escapatorias y explicaciones que ya vivían en el documento. Una corrección no está terminada hasta que el tamaño vuelve.
+
 ## Cómo se prueba
 
 ⛔ **No en la misma conversación donde lo escribió.** Sale contaminado: usted sabe lo que quiso decir. Ábralo en una ventana nueva, como si fuera alguien más.
@@ -57,6 +65,10 @@ Tres corridas, con casos distintos:
 | **La incompleta** | no adjunta lo que hace falta | que se detenga y lo pida en vez de fabricarlo |
 
 Y pruebe en más de un asistente. Los modelos ligeros —las versiones «lite» y «flash»— no ejecutan código y no van a devolver archivos por más que afirmen que sí.
+
+⛔ **Un probador que corre dentro del repositorio no está aislado, por más que solo le pase el prompt.** Las instrucciones del repositorio se le cargan solas antes de que abra nada, así que llega sabiendo cómo se diseñó el texto que va a recibir. Y llegan en la versión del arranque de la sesión, no en la de ahora: en una medición reciente el probador describió reglas que ya se habían cambiado y reportó una rama que no era la de trabajo. *Origen:* se le pidió a un probador que reportara qué tenía en contexto antes de leer el prompt. Respondió con las dos cosas que no debía tener: las reglas de escritura y el protocolo de prueba. Sirve pedirle esa medición en cada corrida y anotarla junto al resultado; lo que no sirve es suponer el aislamiento.
+
+⛔ **No pruebe con un ejemplo que vive dentro del prompt.** El modelo lo reconoce y la corrida mide la búsqueda, no el criterio. *Origen:* dos corridas de la 03 se hicieron con «el reciclaje», que el propio prompt trae como ejemplo de su categoría B. Lo notó el probador: «la corrida no prueba si sé clasificar; prueba que sé buscar el ejemplo».
 
 ## Lo que no se puede resolver escribiendo mejor
 

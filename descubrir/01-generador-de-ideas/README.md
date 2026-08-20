@@ -126,7 +126,9 @@ PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primer
 
      ⛔ ORIGEN = X EN LAS 34, SIN EXCEPCIÓN. La plantilla explica que `P` es para lo que observó el estudiante y `S` para lo que él sacó de SCAMPER. Esas dos letras son para SU trabajo, no para el tuyo: todo lo que generaste tú es `X`, incluidas las de SCAMPER, porque las produjiste tú y no él. Marcarlas `P` o `S` le atribuye al estudiante ideas que no son suyas y arruina lo único que ese registro sirve para saber: cuáles ideas sobrevivieron al filtro, si las de él o las de la máquina. Ante la duda, `X`.
 
-     Al terminar dime en una línea qué contadores quedaron: Molestias, Ideas y SCAMPER. Deberían dar 15, 34 y 14.
+     ⛔ AL TERMINAR, VERIFICA DE VERDAD. Después de guardar, vuelve a ABRIR el archivo guardado y LEE tres cosas: que las fórmulas `=COUNTA(...)` sigan siendo fórmulas, el valor de los tres contadores, y qué dice la columna `Origen`. Dime lo que leíste, con esta forma:
+        `Leído del archivo · contadores 15 / 34 / 14 · fórmulas intactas · Origen: 34 X`
+     No me digas lo que *esperabas* que quedara: si no volviste a abrir el archivo, dilo. Un número esperado no es una verificación.
 
   RUTA 2 — CSV. Si te dije «sigue sin archivo», o si tienes la plantilla pero no puedes devolverme un `.xlsx`, entrégame tres `.csv` en UTF-8:
      `molestias.csv` — una columna: Molestia
@@ -167,6 +169,8 @@ Empieza por el Paso 1.
 Tres bloques de código rotulados —**Molestias** 15 líneas, **Ideas** 20 líneas, **SCAMPER** 14 líneas— y un cierre corto por fuera. Si le devuelve tablas, pídale «los tres bloques como líneas sueltas, sin tabla»: las tablas no se pegan bien en Excel y las líneas sí.
 
 ⚠️ **El fallo más peligroso: que le entreguen un archivo fabricado.** Si el modelo no logra abrir su plantilla, algunos arman un `.xlsx` nuevo con las tres hojas y el mismo contenido. Se ve bien y no lo es: **no trae los contadores, ni las listas desplegables de `Origen` y `Letra`, ni el panel «Cómo se llena»**. Pasó en una prueba real con Copilot, que lo dijo sin que nadie preguntara: *«no pude acceder a la plantilla original del enlace… generé un archivo Excel nuevo»*. Ábralo y mire a la derecha de la hoja `Ideas`: si no están «Ideas escritas», «Meta del taller» y «★ marcadas», ese archivo no es la plantilla. Vuelva a empezar **adjuntando** el archivo.
+
+⚠️ **Exija la lectura, no la promesa.** La última línea debe empezar con «Leído del archivo». En una prueba real Copilot escribió «Contadores *esperados*: 15 · 34 · 14» — declaró lo que creía haber puesto, sin volver a abrirlo. Claude sí lo abrió y leyó. Si su herramienta dice «esperados», pídale que abra el archivo guardado y lea.
 
 ⚠️ **La columna `Origen` tiene que decir `X` en las 34 filas.** Si aparece alguna `P` o alguna `S`, el modelo le está atribuyendo ideas que no son suyas.
 

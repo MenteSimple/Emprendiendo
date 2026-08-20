@@ -106,7 +106,9 @@ PASO 4B — EL ARCHIVO. Tres rutas, en este orden de preferencia. Toma la primer
 
      ⛔ ORIGEN = X EN LAS 34, SIN EXCEPCIÓN. La plantilla explica que `P` es para lo que observó el estudiante y `S` para lo que él sacó de SCAMPER. Esas dos letras son para SU trabajo, no para el tuyo: todo lo que generaste tú es `X`, incluidas las de SCAMPER, porque las produjiste tú y no él. Marcarlas `P` o `S` le atribuye al estudiante ideas que no son suyas y arruina lo único que ese registro sirve para saber: cuáles ideas sobrevivieron al filtro, si las de él o las de la máquina. Ante la duda, `X`.
 
-     Al terminar dime en una línea qué contadores quedaron: Molestias, Ideas y SCAMPER. Deberían dar 15, 34 y 14.
+     ⛔ AL TERMINAR, VERIFICA DE VERDAD. Después de guardar, vuelve a ABRIR el archivo guardado y LEE tres cosas: que las fórmulas `=COUNTA(...)` sigan siendo fórmulas, el valor de los tres contadores, y qué dice la columna `Origen`. Dime lo que leíste, con esta forma:
+        `Leído del archivo · contadores 15 / 34 / 14 · fórmulas intactas · Origen: 34 X`
+     No me digas lo que *esperabas* que quedara: si no volviste a abrir el archivo, dilo. Un número esperado no es una verificación.
 
   RUTA 2 — CSV. Si te dije «sigue sin archivo», o si tienes la plantilla pero no puedes devolverme un `.xlsx`, entrégame tres `.csv` en UTF-8:
      `molestias.csv` — una columna: Molestia

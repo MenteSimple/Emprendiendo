@@ -12,9 +12,9 @@ Herramientas de IA para emprender: prompts en español que se usan **después** 
 | Escribir una herramienta nueva, reescribir una vieja o corregir un prompt que falló | subagente `redactor` |
 | Correr un prompt en limpio: la clara, la torcida, la incompleta | subagente `probador-aislado` |
 | Decidir si algo se puede publicar o mezclar a `main` | subagente `auditor` |
-| Las diez reglas de los prompts, y el porqué de cada una | `COMO-ESCRIBIR-ESTAS-HERRAMIENTAS.md` — **fuente única** |
+| Las reglas de los prompts, y el porqué de cada una | `COMO-ESCRIBIR-ESTAS-HERRAMIENTAS.md` — **fuente única** |
 
-Escribir o corregir un prompt sin pasar por `redactor` no exime de las diez reglas: se leen en `COMO-ESCRIBIR-ESTAS-HERRAMIENTAS.md` y se aplican una por una.
+Escribir o corregir un prompt sin pasar por `redactor` no exime de ninguna regla: se leen en `COMO-ESCRIBIR-ESTAS-HERRAMIENTAS.md` y se aplican una por una.
 
 ## El grep institucional
 

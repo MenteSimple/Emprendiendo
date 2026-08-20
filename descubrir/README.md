@@ -4,7 +4,7 @@ De la idea suelta al reto elegido.
 
 Es la etapa donde casi todo el mundo se equivoca en la misma dirección: se enamora de una solución antes de haber encontrado un problema, y después pasa meses construyendo la respuesta a una pregunta que nadie hizo.
 
-Las cuatro herramientas cubren el arco completo, y cambian de papel a la mitad. La primera genera todo lo que pueda. Las otras tres aparecen cuando ya hay que escoger, y ahí ninguna escoge por usted.
+Las cuatro herramientas cubren el arco completo, y cambian de papel a la mitad. La primera genera todo lo que pueda. Las otras tres aparecen cuando ya hay que escoger, y ahí ninguna escoge por usted: producen alternativas —candidatos, reformulaciones— siempre marcadas como generadas, y le devuelven la pregunta. Producir alternativas y tener prohibido escoger es lo que acá se llama converger.
 
 | # | Herramienta | Movimiento | Después de… | Toma |
 |---|---|---|---|---|
@@ -19,4 +19,4 @@ La número 3 es transversal: se usa suelta, cada vez que aparece un enunciado nu
 
 Porque generar y decidir son operaciones distintas y se estropean mutuamente. Evaluar mientras se genera corta la lista a la mitad y deja afuera justo lo raro, que es lo que valía la pena. Y generar mientras se decide produce una idea nueva cada vez que la conversación se pone difícil, que es la forma más común de no decidir nunca.
 
-La herramienta 1 tiene prohibido rankear. Las otras tres tienen prohibido inventar.
+La herramienta 1 tiene prohibido rankear. Las otras tres tienen prohibido **escoger**: producen todas las alternativas que hagan falta, marcadas como suyas, y la que quede la redacta usted. Una alternativa que usted no escribió no la sabe defender, y la va a tener que defender muchas veces.

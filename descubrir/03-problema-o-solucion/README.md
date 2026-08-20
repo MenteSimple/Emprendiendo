@@ -6,7 +6,7 @@
 
 **Qué no hace:** no escoge cuál candidato sirve, no los ordena por calidad y no escribe la versión final. Los tres son para robarles pedazos, no para adoptarlos: un enunciado que usted no redactó no lo sabe defender, y lo va a tener que defender muchas veces.
 
-Es la que más se usa de las cuatro, y la segunda más corta: solo el [Afilador del reto](../04-frase-del-reto/) pide menos. La confusión entre problema y solución no se resuelve una vez: reaparece cada vez que uno se entusiasma. Por eso está escrita para caber en un minuto y para volver a ella cincuenta veces.
+Es la que más se usa de las cuatro, y la más corta: un minuto contra el cuarto de hora del [Afilador del reto](../04-frase-del-reto/). La confusión entre problema y solución no se resuelve una vez: reaparece cada vez que uno se entusiasma. Por eso está escrita para caber en un minuto y para volver a ella cincuenta veces.
 
 No ejecuta código, no pide plantilla y no devuelve archivos. Eso la hace la más portátil de las cuatro: funciona pegada desde un celular, y sirve igual en los modelos ligeros —los «flash» y «lite»—, que no ejecutan código y por eso no pueden con las herramientas que dependen de un archivo.
 

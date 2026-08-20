@@ -4,14 +4,14 @@ Actualizado: **20 de agosto de 2026**
 
 ## Dónde va cada herramienta
 
-| # | Herramienta | Escrita | Probada | Publicada |
-|---|---|---|---|---|
-| 01 | Generador de ideas | ✅ | ⚠️ el prompt cambió después de probarlo | ✅ |
-| 02 | Descarte y filtros | ✅ terminada | ⚠️ corrida, pero sin registro en su README | ✅ |
-| 03 | ¿Problema o solución? | ✅ reescrita | ✅ ocho corridas | ✅ |
-| 04 | Afilador del reto | ✅ reescrita | ✅ | ✅ |
+| # | Herramienta | Escrita | En contexto aislado | En varios motores | Publicada |
+|---|---|---|---|---|---|
+| 01 | Generador de ideas | ✅ | ⚠️ sí, pero el prompt cambió después | ⚠️ Copilot · Gemini · Claude, sobre el prompt viejo | ✅ |
+| 02 | Descarte y filtros | ✅ terminada | ⚠️ corrida, sin registro en su README | ⛔ | ✅ |
+| 03 | ¿Problema o solución? | ✅ reescrita | ✅ ocho corridas | ⛔ | ✅ |
+| 04 | Afilador del reto | ✅ reescrita | ✅ | ⛔ | ✅ |
 
-Las cuatro están escritas bajo las veinte reglas. Lo que queda no es escribir, es cerrar la validación.
+Las cuatro están escritas bajo las veinte reglas. Lo que queda no es escribir, es cerrar la validación — y **ninguna de las cuatro está hoy probada en más de un motor**: la única que lo estuvo fue la 01, y su prompt cambió después. Eso necesita a una persona presente y es el issue #15.
 
 ## Lo que hay que hacer, en orden
 

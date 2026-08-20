@@ -33,7 +33,7 @@ PASO 2 — MOLESTIAS. Escribe 15 molestias concretas de esa gente: cosas que int
   - Mézclalas: unas de plata, unas de tiempo, unas de esfuerzo físico, unas de información que no tienen, unas de trato con otras personas.
   - Marca con (?) al final las que sean conjetura tuya y no puedas sostener. No conoces ese lugar ni a esa gente: lo que estés suponiendo, dilo. Espero varias marcadas; si no marcas ninguna, te estás inventando certezas.
 
-  SALIDA: bloque de código, 15 líneas, una molestia por línea. Sin numerar, sin viñetas, sin negritas, sin encabezado. Nada más dentro del bloque.
+  SALIDA: escribe la palabra **Molestias** en una línea suelta, y debajo un bloque de código con 15 líneas, una molestia por línea. Sin numerar, sin viñetas, sin negritas, sin encabezado. Nada más dentro del bloque.
 
 PASO 3 — IDEAS. Genera 20 ideas que ataquen esas molestias. Reglas:
   - Cada idea se escribe en una sola línea y termina diciendo a quién le sirve, después de un guion.
@@ -42,7 +42,7 @@ PASO 3 — IDEAS. Genera 20 ideas que ataquen esas molestias. Reglas:
   - Que ya exista algo parecido no es problema: si existe, el problema es real. Inclúyelas.
   - No repitas la misma idea con otro nombre. Si dos se parecen, deja la más específica.
 
-  SALIDA: bloque de código, exactamente 20 líneas, una idea por línea. Sin numerar, sin viñetas, sin tabla. Nada más dentro del bloque.
+  SALIDA: escribe la palabra **Ideas** en una línea suelta, y debajo un bloque de código con exactamente 20 líneas, una idea por línea. Sin numerar, sin viñetas, sin tabla. Nada más dentro del bloque.
 
 PASO 4 — SCAMPER. Escoge 3 ideas de las anteriores, bien distintas entre sí. Di cuáles escogiste. Después produce EXACTAMENTE 14 ideas nuevas en total —no 14 por idea, 14 contando todo— repartidas así: dos por cada letra, tomando para cada letra la idea que mejor se preste.
 
@@ -54,7 +54,11 @@ PASO 4 — SCAMPER. Escoge 3 ideas de las anteriores, bien distintas entre sí. 
   E · Eliminar — ¿qué le quito y sigue sirviendo?
   R · Reordenar — ¿y si invierto el orden o quién hace qué?
 
-  SALIDA: bloque de código, exactamente 14 líneas, en este orden fijo y sin escribir la letra: S, S, C, C, A, A, M, M, P, P, E, E, R, R. Una idea por línea. Ese orden importa porque la plantilla ya trae las letras puestas en ese mismo orden.
+  ⛔ ANTES DE ESCRIBIR EL BLOQUE, CUENTA. Dos por letra, ni una más ni una menos. El error típico es meter tres sustituciones y dejar una sola reordenación: si eso pasa, todas las líneas siguientes quedan corridas y en la plantilla cada idea cae junto a la letra equivocada. Si no te cuadra, corrígelo antes de entregarlo.
+
+  SALIDA: escribe la palabra **SCAMPER** en una línea suelta, y debajo un bloque de código con exactamente 14 líneas, en este orden fijo y sin escribir la letra: S, S, C, C, A, A, M, M, P, P, E, E, R, R. Una idea por línea. Ese orden importa porque la plantilla ya trae las letras puestas en ese mismo orden.
+
+  Inmediatamente después del bloque, FUERA del código, escribe una sola línea de verificación con el conteo real de lo que acabas de entregar, así: `Verificación · S=2 C=2 A=2 M=2 P=2 E=2 R=2`. Si algún número no da 2, rehaz el bloque antes de seguir.
 
 PASO 5 — CIERRE. Fuera de los bloques de código, termina con esto y nada más:
   - Dos territorios cercanos que NO exploramos y donde valdría la pena que yo genere por mi cuenta.
@@ -75,7 +79,9 @@ Empieza por el Paso 1.
 
 ## Qué debería devolverle
 
-Tres bloques de código —15 líneas, 20 líneas, 14 líneas— y un cierre corto por fuera. Si le devuelve tablas, pídale «los tres bloques como líneas sueltas, sin tabla»: las tablas no se pegan bien en Excel y las líneas sí.
+Tres bloques de código rotulados —**Molestias** 15 líneas, **Ideas** 20 líneas, **SCAMPER** 14 líneas— y un cierre corto por fuera. Si le devuelve tablas, pídale «los tres bloques como líneas sueltas, sin tabla»: las tablas no se pegan bien en Excel y las líneas sí.
+
+⚠️ **Mire la línea de verificación de SCAMPER.** Debe decir `S=2 C=2 A=2 M=2 P=2 E=2 R=2`. Si algún número no da 2, la lista quedó corrida y al pegarla en la plantilla cada idea va a caer junto a la letra equivocada. Pídale que la rehaga: en las pruebas falló una de cada dos veces, y es el único error de esta herramienta que el estudiante no puede detectar solo.
 
 Si todas las ideas le salieron aplicaciones, el prompt se saltó una regla. Dígale «un tercio que no sea software» y vuelve a intentarlo.
 

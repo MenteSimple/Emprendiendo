@@ -1,0 +1,6 @@
+# Obsidian, si se abre la carpeta como bóveda
+.obsidian/
+.trash/
+
+# macOS
+.DS_Store

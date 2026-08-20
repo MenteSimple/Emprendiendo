@@ -114,6 +114,18 @@ La columna `Revisión` llena en las tres hojas, y **nada más tocado**. Si le ca
 
 **En el Paso 4.** El encaje con el equipo es el criterio que casi nadie sustenta. Una oportunidad excelente para otro equipo puede ser mala para el suyo, y eso no se arregla con ganas.
 
+## Cómo se probó
+
+Tres corridas en contexto aislado el 20 de agosto de 2026, cada una en una ventana nueva que solo recibió el texto del prompt y el mensaje de una persona, en un motor con entorno de ejecución de código.
+
+**El caso claro** —seis descartes con motivo, tres de ellos de los que botan lo bueno; tres sobrevivientes bien sustentados; finalistas con nombres y el encaje flojo—. Fue de corrido en una sola respuesta, declaró `Ruta 1`, dijo los tres rótulos testigo correctos, y el archivo volvió con **cero celdas tocadas fuera de `Revisión`**, los paneles intactos y las `=COUNTA(...)` todavía como fórmulas. Los dos números del cierre dieron bien. Encontró además una contradicción que nadie había sembrado: en factibilidad el equipo escribió «necesitamos un carro y un conductor con licencia especial» y en el corte 3 había puesto «nada».
+
+**El caso torcido** —tres descartes sin motivo, «estudiantes universitarios» y «seguro conseguimos a alguien» en el corte 2, columnas de corte vacías, finalistas sin nombres, y de entrada «dinos de una vez cuál escoger»—. Se negó a elegir en una línea antes que nada, y juntó en una sola respuesta la pausa por motivos y la pregunta del plazo, en vez de frenarse dos veces seguidas. Al continuar volvió a detenerse porque **todavía faltaba un motivo, y tenía razón**: quien armó el caso de prueba se había equivocado de fila al llenarlo. Con el archivo completo marcó los seis descartes como mal motivados y los tres sobrevivientes como caídos, sin llenar ni una de las celdas que el equipo había dejado vacías.
+
+**Sin adjuntar nada.** Una sola línea pidiendo la plantilla. No fabricó archivo, no ofreció bajarlo de ninguna parte, y no preguntó por el plazo porque el plazo ya se lo habían dado.
+
+⚠️ **El defecto que quedó vivo:** el límite de «máximo dos frases» se pasó en 4 de las 26 revisiones escritas entre las dos corridas con archivo. No rompe nada y no se nota al leer, pero infla la columna. Es lo primero que hay que mirar si alguien la vuelve a correr.
+
 ## Cómo registrar el uso
 
 Anoten qué descarte revirtieron o confirmaron por esta revisión, y qué respondieron a la pregunta del corte 2. Si el equipo decidió ignorar una observación, anótenlo también: en dos meses van a querer saber por qué siguieron adelante con esa.

@@ -7,13 +7,15 @@ Actualizado: **20 de agosto de 2026**
 | # | Herramienta | Escrita | Probada | Publicada |
 |---|---|---|---|---|
 | 01 | Generador de ideas | ✅ | ✅ Copilot · Gemini · Claude | ✅ |
-| 02 | Descarte y filtros | ✅ auditada y corregida, **sin probar** | ⛔ | ✅ el código, no la validación |
+| 02 | Descarte y filtros | ✅ auditada y corregida | ✅ tres corridas en contexto aislado, 20 de agosto | ✅ |
 | 03 | ¿Problema o solución? | ⚠️ borrador viejo | ⛔ | ⚠️ versión previa a los aprendizajes |
 | 04 | Afilador del reto | ⚠️ borrador viejo | ⛔ | ⚠️ versión previa a los aprendizajes |
 
 ## Lo que hay que hacer, en orden
 
-**1 · Probar la 02.** Ya está auditada y corregida —ver abajo qué tenía—, y ahora sí lo único que falta son las tres corridas en contexto aislado que exige `CLAUDE.md`: el caso claro, el torcido —descartes sin motivo, sobrevivientes con «un tipo de persona» en el corte 2, columnas de corte vacías— y el de sin adjuntar archivo. Sin eso no se le puede dar a nadie.
+**1 · La 02 está lista, salvo por un detalle.** Las tres corridas en contexto aislado pasaron el 20 de agosto —el caso claro, el torcido y el de sin adjuntar archivo— y están contadas en su README. Queda vivo un defecto menor: el límite de «máximo dos frases» se pasó en 4 de las 26 revisiones escritas. Decidir si se corrige y se vuelve a correr, o si se publica así y queda anotado.
+
+Falta también lo que necesita a una persona presente: correrla en varios motores. La 01 se probó en tres; esta, en uno solo.
 
 **2 · Rehacer la 03 y la 04.** Las que están publicadas son borradores del principio de la sesión, escritos bajo un principio que después resultó equivocado —«interroga, no produce»— y sin ninguna de las nueve reglas. Hay que reescribirlas desde cero conservando lo que sigue siendo válido: las tres categorías de enunciado en la 03, y la plantilla «A ___ le cuesta ___ porque ___» con sus ejemplos en la 04.
 
@@ -43,8 +45,8 @@ Los rótulos testigo están en `Descartadas!F11:F13` — «Descartes revisados»
 4. El Paso 1 declaraba dos pausas y abría una tercera con «pregúntamelo si no te lo di» sobre el plazo.
 5. Se ofrecía pegar las ideas en el chat como alternativa al archivo, sin haberla corrido nunca — la regla 5, otra vez.
 
-Riesgos conocidos y todavía no probados, para mirar en la primera corrida:
+Los tres riesgos que estaban sin probar, ya probados el 20 de agosto:
 
-- El prompt le prohíbe tocar cualquier columna que no sea `Revisión`. No sé si lo respeta. Es lo primero que hay que mirar.
-- Si con las columnas nuevas el modelo de verdad juzga cada corte por la suya, o si sigue deduciendo de la línea de la idea cuando la columna está vacía.
-- Al guardar con `openpyxl` los contadores `=COUNTA(...)` quedan sin valor en caché y se ven vacíos hasta que Excel recalcule. Ya está avisado en el README; hay que confirmar que sigan siendo fórmulas y no números.
+- **Respeta la columna `Revisión`.** Comparadas celda por celda las dos corridas con archivo contra su original: cero celdas modificadas afuera, en ninguna de las tres hojas, y ninguna celda vacía del equipo rellenada.
+- **Juzga cada corte por su columna.** En el caso torcido marcó los cortes como no pasados por columna vacía, sin deducirlos de la línea de la idea.
+- **Las `=COUNTA(...)` sobreviven como fórmulas**, no convertidas en números. Se ven vacías hasta que Excel recalcule, como estaba previsto.

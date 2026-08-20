@@ -23,7 +23,7 @@ Eres un revisor externo del filtro que ya hizo mi equipo: revisas cómo filtraro
 
 PASO 1 — EL INSUMO. Antes de escribir nada, comprueba tres cosas:
   (a) Que puedas ABRIR la plantilla que te adjunté y leer sus tres hojas: `Descartadas`, `Sobrevivientes`, `Finalistas`. En Python, `openpyxl`.
-  (b) Que las tres traigan trabajo de mi equipo: el MOTIVO escrito de cada descarte, las filas de `Sobrevivientes` y los finalistas comparados.
+  (b) Que las tres traigan trabajo de mi equipo: el MOTIVO escrito de cada descarte, al menos una idea escrita en `Sobrevivientes`, y los finalistas comparados en los cuatro criterios.
   (c) Nuestro plazo, y la fecha para haber hablado con alguien.
 
   ⛔ SI FALTA ALGO, pídelo TODO en un mismo mensaje y detente ahí. Es la ÚNICA pausa: del Paso 2 al Paso 6 vas de corrido, en una sola respuesta, sin preguntarme nada.
@@ -53,11 +53,11 @@ PASO 2 — DESCARTES MAL MOTIVADOS. Revisa la hoja `Descartadas`.
   A los descartes bien motivados, escríbeles `ok` en `Revisión` y nada más. Idea escrita y motivo en blanco: `sin motivo`. ⛔ `ok` dice «bien motivado» y ahí sería falso.
 
 PASO 3 — SOBREVIVIENTES QUE NO PASAN. Revisa la hoja `Sobrevivientes` contra los tres cortes, que son binarios:
-     1. ¿Es un problema, o es una solución? Se cae si ya dice lo que se va a construir. Prueba: reescríbela como problema de alguien; si no se puede, no había problema.
+     1. ¿Es un problema, o es una solución? El nombre corto de la fila no la tumba: casi todas se escriben como «Cuadre semanal para…». La tumba que detrás no se pueda escribir el problema de alguien. Intenta escribirlo con lo que hay en las tres hojas; si no sale, no había problema.
      2. ¿Con quién podemos hablar antes de la fecha que te di, y quién de nosotros lo consigue? Se cae si el contacto no es un nombre o un lugar concreto, o si nadie de mi equipo se comprometió a conseguirlo. Sé especialmente duro con este.
-     3. ¿Cabe en nuestro plazo? Se cae si necesita una licencia, una obra o un permiso que no llega a tiempo.
+     3. ¿Cabe en nuestro plazo? Se cae si necesita una licencia, una obra o un permiso que no llega a tiempo. Si nada en las tres hojas lo dice, no lo inventes: escribe que este corte no se puede juzgar con lo que hay.
 
-  En `Revisión` de cada fila, una de tres: `ok` · `no pasa el corte N` y por qué · `ok con reparo` y cuál. Máximo dos frases. ⛔ Lo que no sea `ok` a secas cita entre comillas la celda que lo tumba: sin cita no se distingue de un `ok` escrito sin leer.
+  En `Revisión` de cada fila, una de tres: `ok` · `no pasa el corte N` y por qué · `ok con reparo` y cuál. Máximo dos frases. ⛔ Lo que no sea `ok` a secas cita entre comillas la celda que lo tumba, con su hoja; el reparo cita LAS DOS que se contradicen. Sin cita no se distingue de un `ok` escrito sin leer.
 
   Un reparo es una contradicción entre hojas, y buscarlas es parte del trabajo: un contacto con nombre propio acá no puede convivir con un «no conocemos a nadie» en `Finalistas`.
 
@@ -69,15 +69,15 @@ PASO 4 — LA COMPARACIÓN. Revisa la hoja `Finalistas` criterio por criterio: l
 
 PASO 5 — EL ARCHIVO.
   ⛔ ESCRIBE SOLO EN LA COLUMNA `Revisión`: la `E` en `Descartadas`, la `F` en `Sobrevivientes`, la `E` en `Finalistas`. Filas 2 a 25 en las dos primeras, filas 2 a 5 en `Finalistas`. Lo demás se lee y se deja igual.
-  ⛔ Una fila sin idea escrita se deja intacta: solo las filas con idea llevan `Revisión`, y son esas las que cuentan.
+  ⛔ En `Descartadas` y `Sobrevivientes`, una fila sin idea escrita se deja intacta: solo las filas con idea llevan `Revisión`, y son esas las que cuentan. `Finalistas` no lleva ideas sino los cuatro criterios: ahí escribes las CUATRO revisiones, una por fila, siempre.
   Antes de escribir, aparta una copia intacta del adjunto: contra ella se compara al final.
   Modifícalo, no lo vuelvas a crear: `load_workbook(ruta)`, escribir celdas, `save()`. ⛔ Ábrelo sin `data_only=True`: esa opción borra las fórmulas del marcador y no avisa.
 
   ⛔ PRUEBA DE QUE ABRISTE EL ARCHIVO. `H11:H13` de `Descartadas` son fórmulas sin valor guardado: esos tres conteos los sacas con código sobre los rangos que miden, antes de escribir y otra vez al final. Después de guardar, reabre el archivo y dime cuatro cosas:
-     1. El texto EXACTO de `G11`, `G12` y `G13` de `Descartadas`.
+     1. El texto EXACTO de `G11`, `G12` y `G13` de `Descartadas`, y el de la primera idea con su motivo, copiados tal como los escribió mi equipo.
      2. Si `H11:H13` siguen siendo fórmulas o quedaron números, y los tres conteos antes y después: los dos últimos salen IGUALES y el primero sube hasta las filas con idea escrita.
-     3. Cuántas celdas fuera de `Revisión` cambiaron, comparando celda por celda el guardado contra esa copia: tiene que ser CERO, y sale de los dos archivos, no de tus notas.
-     4. Cuántas filas con idea escrita tiene cada hoja, y en cuántas escribiste `Revisión`. Son el mismo número.
+     3. Cuántas celdas fuera de `Revisión` cambiaron y cuáles, comparando celda por celda el guardado contra esa copia. Sale de los dos archivos, no de tus notas.
+     4. Cuántas filas con idea escrita tienen `Descartadas` y `Sobrevivientes`, y en cuántas escribiste `Revisión`: el mismo número. Y en `Finalistas`, cuántas revisiones escribiste: son CUATRO, una por criterio.
   ⛔ Si no pudiste volver a abrir el archivo guardado, escribe exactamente `NO ABRÍ EL ARCHIVO GUARDADO` y no inventes ni los rótulos ni los conteos. Si algo no cuadra con lo de arriba, escribe `⚠️ MOVÍ ALGO QUE NO ERA REVISIÓN` y dime qué fue.
 
   ⛔ DECLARA LA RUTA con una de estas líneas exactas:

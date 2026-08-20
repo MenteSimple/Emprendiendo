@@ -1,44 +1,46 @@
 # Herramientas de IA para emprender
 
-Prompts en español para usar **después** de haber hecho el trabajo, no en lugar de hacerlo.
+Prompts en español para las dos cosas que la IA hace bien en un proyecto de emprendimiento: **ampliar** cuando hay que generar, y **discutir** cuando hay que decidir.
 
-Cada herramienta de este repositorio toma algo que usted ya produjo —una lista de ideas, un filtro que aplicó, una frase que escribió— y lo interroga. Ninguna genera el entregable por usted. Si llega sin trabajo hecho, la herramienta se lo dice y no arranca.
+## El principio: divergir con la máquina, converger usted
 
-## Por qué está armado así
+Emprender alterna entre dos movimientos, y confundirlos es de donde vienen casi todos los errores.
 
-La forma más común de usar IA en un proyecto de emprendimiento es pedirle el entregable. Es también la única que no deja aprendizaje: el documento sale, y la capacidad de producirlo no. Estas herramientas invierten el orden. Usted genera, decide y escribe; la máquina busca el punto débil de lo que hizo, propone lo que usted no consideró, y le devuelve la decisión.
+**Cuando toca divergir** —generar ideas, imaginar segmentos, listar formas de resolver algo— la IA es una ventaja enorme y no hay razón para no usarla a fondo. Produce volumen, no se cansa, y no tiene el pudor que a uno lo frena en la idea número doce. Úsela sin culpa. Las herramientas de esta etapa generan mucho, rápido y despareja.
 
-Eso hace además que la IA sirva para algo que sin ella es difícil: **conseguir un desacuerdo honesto**. Un compañero de equipo que ya se comprometió con la idea no va a discutírsela con ganas. Un modelo al que se le pide explícitamente que busque el error, sí.
+**Cuando toca converger** —descartar, escoger, comprometerse— la máquina no decide. No porque no pueda dar una respuesta, sino porque va a dar una excelente respuesta con datos que no tiene, y usted va a trabajar meses sobre esa decisión. Ahí las herramientas cambian de papel: piden lo que usted ya decidió, buscan el punto débil y le devuelven la pregunta.
 
-## Las cuatro reglas
+Confundir los dos movimientos es lo que produce las dos fallas típicas: editarse mientras se genera —y quedarse con seis ideas prudentes— o dejar que la máquina escoja —y defender en marzo una decisión que uno no tomó.
 
-1. **Puerta de entrada.** La herramienta pide su trabajo primero. Sin insumo no arranca.
-2. **Interroga, no produce.** Señala la debilidad concreta contra un criterio explícito. No escribe el entregable.
-3. **Amplía al final, y marcado.** Solo después de la crítica agrega perspectivas, y las etiqueta como generadas, para que nunca se confundan con evidencia de campo.
-4. **Deja rastro.** La salida se pega en su bitácora indicando qué herramienta usó y qué hizo con la respuesta. El uso de IA declarado se puede discutir; el escondido, no.
+## Las reglas
+
+1. **Contexto suyo, primero.** Ninguna arranca en el vacío. Las de divergencia preguntan para quién, dónde y en qué sector antes de generar una sola línea. Las de convergencia piden el trabajo que usted ya hizo, con sus razones.
+2. **Genera sin límite, decide nunca.** En divergencia produce todo lo que se le pida. En convergencia tiene prohibido escoger por usted.
+3. **Todo lo generado va marcado.** Lo que salió de la máquina se distingue de lo que salió de usted y de lo que salió de hablar con gente. Cuando llegue el momento de filtrar, va a querer saber cuál es cuál.
+4. **Deja rastro.** Qué herramienta usó, qué le respondió que no esperaba, y qué hizo con eso. El uso de IA declarado se puede discutir; el escondido, no.
 
 ## Cómo se usan
 
-Cada archivo tiene un bloque de código con el prompt completo. En GitHub, ese bloque trae un botón de copiar en la esquina superior derecha. Cópielo, péguelo en el chat de IA que use —ChatGPT, Claude, Gemini, el que sea— y siga las instrucciones que el propio prompt le da.
+Cada archivo tiene un bloque de código con el prompt completo. En GitHub, ese bloque trae un botón de copiar en la esquina superior derecha. Cópielo, péguelo en el chat de IA que use —ChatGPT, Claude, Gemini, el que sea— y responda lo que le pregunte.
 
-No hace falta instalar nada ni tener una cuenta específica. Están escritos para funcionar igual en cualquier modelo razonablemente reciente.
+No hace falta instalar nada ni abrir cuenta en ningún servicio nuevo. Están escritos para funcionar igual en cualquier modelo razonablemente reciente.
 
 ## Catálogo
 
 ### [Descubrir](descubrir/) — de la idea suelta al reto elegido
 
-| Herramienta | Se usa después de… |
-|---|---|
-| [Interrogador de ideas](descubrir/01-interrogador-de-ideas.md) | generar su lista de ideas sin filtrar |
-| [Descarte y filtros](descubrir/02-descarte-y-filtros.md) | que el equipo aplicó los cortes y eligió finalistas |
-| [¿Problema o solución?](descubrir/03-problema-o-solucion.md) | escribir cualquier enunciado que crea que es un problema |
-| [Afilador del reto](descubrir/04-frase-del-reto.md) | escribir la frase del reto |
+| Herramienta | Movimiento | Se usa… |
+|---|---|---|
+| [Generador de ideas](descubrir/01-generador-de-ideas.md) | divergir | al final de su propia sesión de generación, para estirar la lista |
+| [Descarte y filtros](descubrir/02-descarte-y-filtros.md) | converger | después de que el equipo cortó y eligió finalistas |
+| [¿Problema o solución?](descubrir/03-problema-o-solucion.md) | converger | cada vez que escriba un enunciado que crea que es un problema |
+| [Afilador del reto](descubrir/04-frase-del-reto.md) | converger | después de escribir la frase del reto |
 
 Proponer · Modelar · Validar — en construcción.
 
-## Advertencia sobre lo que estas herramientas no pueden hacer
+## Lo que ninguna puede hacer
 
-Ninguna sabe nada de su mercado, sus clientes ni su ciudad. Todo lo que digan sobre el mundo real es una conjetura plausible, y varias van a ser falsas con seguridad y con buen tono. **Sirven para revisar el razonamiento, no para conseguir hechos.** Los hechos se consiguen hablando con gente.
+Ninguna sabe nada de su mercado, sus clientes ni su ciudad. Todo lo que digan sobre el mundo real es una conjetura plausible, y varias van a ser falsas con seguridad y con buen tono. **Sirven para producir alternativas y para revisar razonamientos, no para conseguir hechos.** Los hechos se consiguen hablando con gente, y eso no se delega.
 
 ## Licencia
 

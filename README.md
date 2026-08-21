@@ -57,7 +57,7 @@ Es una precaución con motivo: un prompt escrito en dos archivos se desincroniza
 | [¿Problema o solución?](descubrir/03-problema-o-solucion/) | converger | cada vez que escriba un enunciado que crea que es un problema |
 | [Afilador del reto](descubrir/04-frase-del-reto/) | converger | después de escribir la frase del reto |
 
-Proponer · Modelar · Validar — en construcción.
+Proponer · Construir · Validar — en construcción.
 
 ## Si quiere escribir la suya
 

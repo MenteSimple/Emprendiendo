@@ -47,3 +47,45 @@ La marca de procedencia de cada idea: `P` si salió de un problema que la person
 Las tres ideas que la persona más ganas tiene de contarle a alguien, marcadas al terminar de generar.
 
 ⛔ **No es una preselección y no alimenta el descarte.** Es entusiasmo anterior a cualquier filtro, y usarla para filtrar sería editarse mientras se genera.
+
+## Corte · Filtro
+
+No son lo mismo y confundirlos desordena toda la etapa.
+
+Un **corte** elimina: es binario, no admite «más o menos», y se aplica a **todas** las ideas. Son tres — es un problema o una solución, hay alguien concreto con quien hablar, cabe en el plazo.
+
+Un **filtro** compara: tiene matices y se aplica solo a **las pocas** que sobrevivieron. Son cuatro — deseabilidad, factibilidad, viabilidad, encaje con el equipo.
+
+⛔ Aplicarle los cuatro filtros a treinta ideas no lo hace nadie, y aplicarles los cortes binarios a tres es llegar tarde.
+
+## Hoja de descarte
+
+El archivo que produce el generador de ideas al terminar: una fila por idea, con `Origen`, las columnas de los tres cortes, el motivo escrito y la preferencia de cada persona. **Las columnas las llena el equipo**; la máquina la prepara y después la audita.
+
+No hay número de sobrevivientes: mínimo uno, máximo ninguno.
+
+## Ejecutor de la tarea
+
+Quien realiza la tarea que la hipótesis nombra. Es la misma persona que el «quién» con el que se mira una idea al principio, vista después de saber qué está tratando de lograr.
+
+⛔ No es «el cliente» ni «el usuario»: es quien **ejecuta la tarea**, que puede no ser quien paga.
+
+## Hipótesis JTBD
+
+Lo que el equipo sale a validar. Son **dos frases**, y entre las dos cubren las cuatro fuerzas:
+
+> **«Cuando [detonante], [ejecutor] quiere [tarea funcional], para poder [resultado deseado], sin [ansiedad principal].»**
+>
+> **«Hoy lo resuelve [apaño], y le falla porque [causa].»**
+
+La primera está escrita desde la persona; la segunda desde afuera. **Esa asimetría es a propósito** y no se corrige.
+
+## Las cuatro fuerzas
+
+Lo que mueve o frena un cambio: **empuje** —la frustración con lo de hoy—, **atracción** —lo que promete lo nuevo—, **ansiedad** —lo que da miedo del cambio— y **hábito** —lo que ya se hace y funciona a medias—. Se cambia cuando empuje + atracción > ansiedad + hábito.
+
+Cada hueco de la hipótesis alimenta una: *causa* → empuje · *resultado* → atracción · *ansiedad* → ansiedad · *apaño* → hábito.
+
+## Competencia real
+
+Lo que la persona usa hoy para salir del paso, **incluido el apaño casero y no hacer nada**. Es el `apaño` de la segunda frase, y es lo que casi todos los equipos se saltan.
